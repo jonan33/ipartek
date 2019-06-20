@@ -132,11 +132,19 @@ public class Fecha {
 	}
 
 	@Override
-	public String toString() {
-		return "Fecha [dia=" + dia + ", mes=" + mes + ", anyo=" + anyo + ", getDia()=" + getDia() + ", getMes()="
-				+ getMes() + ", getAnyo()=" + getAnyo() + ", fechaCorrecta()=" + fechaCorrecta() + ", esBisiesto()="
-				+ esBisiesto() + ", getClass()=" + getClass() + ", hashCode()=" + hashCode() + ", toString()="
-				+ super.toString() + "]";
+	public String toString() {StringBuilder sb = new StringBuilder();
+    if (dia < 10) {
+        sb.append("0");
+    }
+    sb.append(dia);
+    sb.append("-");
+    if (mes < 10) {
+        sb.append("0");
+    }
+    sb.append(mes);
+    sb.append("-");
+    sb.append(anyo);
+    return sb.toString();
 	}
 	
 
