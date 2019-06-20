@@ -1,6 +1,6 @@
 package com.ipartek.formacion.uf2216.ejercicios.poo;
 
-public class Ave {
+public abstract class Ave {
 
 	private char sexo;
 	private int edad;
@@ -23,4 +23,6 @@ public class Ave {
 	public void setNumeroAves(int i) {
 		Ave.avesCreadas += i;
 	}
+	
+	public abstract void Cantar();
 }

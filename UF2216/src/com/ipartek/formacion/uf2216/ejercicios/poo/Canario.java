@@ -1,6 +1,6 @@
 package com.ipartek.formacion.uf2216.ejercicios.poo;
 
-public class Canario extends Ave{
+public abstract class Canario extends Ave{
 	
 	public double tamanyo;
 	
@@ -30,6 +30,7 @@ public class Canario extends Ave{
 	public void setTamanyo(double tamanyo) {
 		this.tamanyo = tamanyo;
 	}
+	
 	
 
 }

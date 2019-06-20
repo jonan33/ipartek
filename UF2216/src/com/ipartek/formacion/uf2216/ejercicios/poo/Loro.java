@@ -21,5 +21,9 @@ public class Loro extends Ave{
 			System.out.println("Este");
 		}
 	}
+	
+	public void Cantar() {
+		
+	}
 
 }
