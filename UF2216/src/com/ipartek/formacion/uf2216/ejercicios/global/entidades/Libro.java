@@ -16,7 +16,9 @@ public class Libro {
 	private String titulo;
 	
 	
-	
+	public Libro() {
+		
+	}
 	public Libro(long id, String titulo, String isbn, String editorial, String autor, String descripcion, String genero, int edicion, boolean IsBorrado) {
 		super();
 		this.titulo = titulo;
@@ -30,7 +32,63 @@ public class Libro {
 		this.IsBorrado = IsBorrado;
 		
 	}
+	
+	
 
+	public String getIsbn() {
+		return isbn;
+	}
+	public void setIsbn(String isbn) {
+		this.isbn = isbn;
+	}
+	public String getEditorial() {
+		return editorial;
+	}
+	public void setEditorial(String editorial) {
+		this.editorial = editorial;
+	}
+	public String getAutor() {
+		return autor;
+	}
+	public void setAutor(String autor) {
+		this.autor = autor;
+	}
+	public String getDescripcion() {
+		return descripcion;
+	}
+	public void setDescripcion(String descripcion) {
+		this.descripcion = descripcion;
+	}
+	public String getGenero() {
+		return genero;
+	}
+	public void setGenero(String genero) {
+		this.genero = genero;
+	}
+	public int getEdicion() {
+		return edicion;
+	}
+	public void setEdicion(int edicion) {
+		this.edicion = edicion;
+	}
+	public boolean isIsBorrado() {
+		return IsBorrado;
+	}
+	public void setIsBorrado(boolean isBorrado) {
+		IsBorrado = isBorrado;
+	}
+	public long getId() {
+		return id;
+	}
+	public void setId(long id) {
+		this.id = id;
+	}
+	public String getTitulo() {
+		return titulo;
+	}
+	public void setTitulo(String titulo) {
+		this.titulo = titulo;
+	}
 	@Override
 	public String toString() {
 		return "Libro [isbn=" + isbn + ", editorial=" + editorial + ", autor=" + autor + ", descripcion=" + descripcion

@@ -25,6 +25,30 @@ public class LibrosDAOColeccion implements Crudable<Libro> {
 	
 	private ArrayList<Libro> libros = new ArrayList<Libro>();
 	
+	public void importar() {
+		
+	}
+	
+	public void exportar() {
+		
+	}
+	
+	public void listar() {
+		
+	}
+	 
+	public void guardar() {
+		
+	}
+	
+	public void cargar() {
+		
+	}
+	
+	public void salir() {
+		
+	}
+	
 	@Override
 	public Iterable<Libro> obtenerTodos() {
 		return libros;
@@ -32,8 +56,7 @@ public class LibrosDAOColeccion implements Crudable<Libro> {
 
 	@Override
 	public Libro obtenerPorId() {
-		// TODO Auto-generated method stub
-		return null;
+		return libros.
 	}
 
 	@Override
