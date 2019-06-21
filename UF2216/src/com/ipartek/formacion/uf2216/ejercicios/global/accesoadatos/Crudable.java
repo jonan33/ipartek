@@ -9,12 +9,12 @@ public interface Crudable<T> {
 	public void insertar(T objeto);
 	public void modificar(T objeto);
 	public void borrar(T objeto);
-	public void borrar(long id);
+	public void borrar(int id);
 	public void listar();
-	public void guardar();
-	public void cargar();
-	public void importar();
-	public void exportar();
-	public void salir();
+//	public void guardar();
+//	public void cargar();
+//	public void importar();
+//	public void exportar();
+//	public void salir();
 	 
 }

@@ -1,6 +1,7 @@
 package com.ipartek.formacion.uf2216.ejercicios.global.accesoadatos;
 
 import java.util.ArrayList;
+import com.ipartek.formacion.uf2216.ejercicios.global.accesoadatos.*;
 
 import com.ipartek.formacion.uf2216.ejercicios.global.entidades.Libro;
 
@@ -33,9 +34,7 @@ public class LibrosDAOColeccion implements Crudable<Libro> {
 		
 	}
 	
-	public void listar() {
-		
-	}
+	
 	 
 	public void guardar() {
 		
@@ -56,7 +55,7 @@ public class LibrosDAOColeccion implements Crudable<Libro> {
 
 	@Override
 	public Libro obtenerPorId() {
-		return libros.
+		return libros.get();
 	}
 
 	@Override
@@ -66,18 +65,20 @@ public class LibrosDAOColeccion implements Crudable<Libro> {
 
 	@Override
 	public void modificar(Libro libro) {
-		// TODO Auto-generated method stub
+		libros.get((int) libro.getId()).setTitulo(libro.getTitulo());
+		libros.get((int)libro.getIsbn()).setIsbn(libro.getIsbn());
+		System.out.println("Cliente con id: "+libro.getId()+" actualizado satisfactoriamente");
 		
 	}
 
 	@Override
 	public void borrar(Libro libro) {
-		// TODO Auto-generated method stub
-		
+		libros.remove(libro.getId());
+		System.out.println("Libro con id: "+libro.getId()+" eliminado satisfactoriamente");
 	}
 
 	@Override
-	public void borrar(long id) {
+	public void borrar(int id) {
 		// TODO Auto-generated method stub
 		
 	}

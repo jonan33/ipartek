@@ -5,21 +5,21 @@ import java.util.Date;
 
 public class Libro {
 	
-	private String isbn;
+	private int isbn;
 	private String editorial;
 	private String autor;
 	private String descripcion;
 	private String genero;
 	private int edicion;
 	private boolean IsBorrado;
-	private long id;
+	private int id;
 	private String titulo;
 	
 	
 	public Libro() {
-		
+		super();
 	}
-	public Libro(long id, String titulo, String isbn, String editorial, String autor, String descripcion, String genero, int edicion, boolean IsBorrado) {
+	public Libro(int id, String titulo, int isbn, String editorial, String autor, String descripcion, String genero, int edicion, boolean IsBorrado) {
 		super();
 		this.titulo = titulo;
 		this.id = id;
@@ -35,11 +35,11 @@ public class Libro {
 	
 	
 
-	public String getIsbn() {
+	public int getIsbn() {
 		return isbn;
 	}
-	public void setIsbn(String isbn) {
-		this.isbn = isbn;
+	public void setIsbn(int i) {
+		this.isbn = i;
 	}
 	public String getEditorial() {
 		return editorial;
@@ -77,10 +77,10 @@ public class Libro {
 	public void setIsBorrado(boolean isBorrado) {
 		IsBorrado = isBorrado;
 	}
-	public long getId() {
+	public int getId() {
 		return id;
 	}
-	public void setId(long id) {
+	public void setId(int id) {
 		this.id = id;
 	}
 	public String getTitulo() {

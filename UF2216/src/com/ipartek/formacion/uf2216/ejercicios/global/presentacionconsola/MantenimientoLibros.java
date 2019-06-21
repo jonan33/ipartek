@@ -37,7 +37,12 @@ public class MantenimientoLibros {
 		
 		opcion = sc.nextInt();
 		
-		
+		switch (opcion){
+		case 0: salir();
+		case 1: insertar();
+		case 2: modificar();
+		case 3: borrar();
+		}
 	}
 
 }
