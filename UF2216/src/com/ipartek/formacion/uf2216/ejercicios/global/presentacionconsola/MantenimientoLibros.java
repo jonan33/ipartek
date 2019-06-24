@@ -14,12 +14,10 @@ public class MantenimientoLibros {
 		Scanner sc = new Scanner(System.in);
 		int opcion;
 		
-		dao.insertar(new Libro(1, "Título 1", 656153, "alfaguara", "jonan", "Un rollazo", "Intriga", 2, true));
-		dao.insertar(new Libro(2, "Título 2", 613531, "Susaeta", "jonan", "Obra de arte", "Romantico", 1, false));
+		dao.insertar(new Libro(1, "Juego de tronos", 656153, "alfaguara", "jonan", "Un rollazo", "Intriga", 2, true));
+		dao.insertar(new Libro(2, "Harry Potter", 613531, "Susaeta", "jonan", "Obra de arte", "Romantico", 1, false));
 		
-		for(Libro libro: dao.obtenerTodos()) {
-			System.out.println(libro);
-		}
+		
 		
 		
 		
@@ -34,6 +32,7 @@ public class MantenimientoLibros {
 		System.out.println("9. Exportar(CSV)");
 		
 		System.out.println("0. Salir");
+		System.out.println("Seleccione opcion");
 		
 		opcion = sc.nextInt();
 		
@@ -41,9 +40,11 @@ public class MantenimientoLibros {
 		
 		case 1: dao.insertar(null);
 		case 2: dao.modificar(null);
-		case 3: dao.borrar(null);
+		case 3: dao.borrar();
 		case 4: dao.listar();
 		case 5: dao.obtenerPorId();
+		case 9: dao.exportar();
+		case 0: dao.salir();
 		}
 	}
 

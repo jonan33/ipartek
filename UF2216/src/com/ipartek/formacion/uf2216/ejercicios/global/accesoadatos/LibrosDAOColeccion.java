@@ -1,6 +1,11 @@
 package com.ipartek.formacion.uf2216.ejercicios.global.accesoadatos;
 
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.PrintWriter;
 import java.util.ArrayList;
+import java.util.Scanner;
+
 import com.ipartek.formacion.uf2216.ejercicios.global.accesoadatos.*;
 
 import com.ipartek.formacion.uf2216.ejercicios.global.entidades.Libro;
@@ -14,6 +19,9 @@ public class LibrosDAOColeccion implements Crudable<Libro> {
 	private LibrosDAOColeccion() {}
 	
 	private static LibrosDAOColeccion instancia; // = new LibrosDAOColeccion();
+	private static final String RUTA_FICHERO = "C:\\trabajos\\libro.csv";
+	private static final boolean AUTO_FLUSH = true;
+	private static final boolean APPEND = true;
 	
 	public static LibrosDAOColeccion getInstance() {
 		if(instancia == null) {
@@ -31,7 +39,17 @@ public class LibrosDAOColeccion implements Crudable<Libro> {
 	}
 	
 	public void exportar() {
-		
+		FileWriter fw = null;
+		try {
+			fw = new FileWriter(RUTA_FICHERO, APPEND);
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		PrintWriter pw = new PrintWriter(fw, AUTO_FLUSH);
+		for(Libro libro: obtenerTodos()) {
+			pw.println(libro);
+		}
 	}
 	
 	
@@ -61,7 +79,7 @@ public class LibrosDAOColeccion implements Crudable<Libro> {
 
 	@Override
 	public void insertar(Libro libro) {
-		libros.add(libro);
+		
 	}
 
 	@Override
@@ -72,21 +90,23 @@ public class LibrosDAOColeccion implements Crudable<Libro> {
 		
 	}
 
-	@Override
-	public void borrar(Libro libro) {
-		libros.remove(libro.getId());
-		System.out.println("Libro con id: "+libro.getId()+" eliminado satisfactoriamente");
-	}
+	
 
 	@Override
-	public void borrar(int id) {
-		// TODO Auto-generated method stub
-		
+	public void borrar() {
+		int id;
+		Scanner sb1 = new Scanner(System.in);
+		System.out.println("Introduzca el id del libro a borrar: ");
+		id = sb1.nextInt();
+		libros.remove(id);
+		System.out.println("Libro con id "+id+ " eliminado satisfactoriamente");
 	}
 
 	@Override
 	public void listar() {
-		// TODO Auto-generated method stub
+		for(Libro libro: obtenerTodos()) {
+			System.out.println(libro);
+		}
 		
 	}
 
