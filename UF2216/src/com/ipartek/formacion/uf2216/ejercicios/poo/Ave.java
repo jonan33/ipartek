@@ -17,7 +17,7 @@ public abstract class Ave {
 	}
 	
 	public void quienSoy() {
-		System.out.println("Mi sexo es " + sexo + " y tengo " + edad);
+		System.out.println("Mi sexo es " + sexo + " y tengo " + edad + " años");
 	}
 	
 	public void setNumeroAves(int i) {

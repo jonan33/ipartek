@@ -45,7 +45,8 @@ public class LibrosDAOColeccion implements Crudable<Libro> {
 	}
 	
 	public void salir() {
-		
+		System.out.println("Hasta luego!");
+		System.exit(0);
 	}
 	
 	@Override
@@ -55,7 +56,7 @@ public class LibrosDAOColeccion implements Crudable<Libro> {
 
 	@Override
 	public Libro obtenerPorId() {
-		return libros.get();
+		return libros.get(0);
 	}
 
 	@Override
@@ -79,6 +80,12 @@ public class LibrosDAOColeccion implements Crudable<Libro> {
 
 	@Override
 	public void borrar(int id) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void listar() {
 		// TODO Auto-generated method stub
 		
 	}

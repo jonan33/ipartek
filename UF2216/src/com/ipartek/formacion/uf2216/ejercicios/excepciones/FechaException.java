@@ -2,10 +2,7 @@ package com.ipartek.formacion.uf2216.ejercicios.excepciones;
 
 public class FechaException extends RuntimeException
 {
-/**
-	 * 
-	 */
-	private static final long serialVersionUID = 4732876786321584481L;
+
 public FechaException() {
 	
 }

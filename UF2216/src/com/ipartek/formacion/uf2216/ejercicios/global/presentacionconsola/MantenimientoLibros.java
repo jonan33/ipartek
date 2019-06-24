@@ -14,8 +14,8 @@ public class MantenimientoLibros {
 		Scanner sc = new Scanner(System.in);
 		int opcion;
 		
-		dao.insertar(new Libro(1, "Título 1", "65413a21sd", "alfaguara", "jonan", "Un rollazo", "Intriga", 2, true));
-		dao.insertar(new Libro(2, "Título 2", "35a1f3a", "Susaeta", "jonan", "Obra de arte", "Romantico", 1, false));
+		dao.insertar(new Libro(1, "Título 1", 656153, "alfaguara", "jonan", "Un rollazo", "Intriga", 2, true));
+		dao.insertar(new Libro(2, "Título 2", 613531, "Susaeta", "jonan", "Obra de arte", "Romantico", 1, false));
 		
 		for(Libro libro: dao.obtenerTodos()) {
 			System.out.println(libro);
@@ -38,10 +38,12 @@ public class MantenimientoLibros {
 		opcion = sc.nextInt();
 		
 		switch (opcion){
-		case 0: salir();
-		case 1: insertar();
-		case 2: modificar();
-		case 3: borrar();
+		
+		case 1: dao.insertar(null);
+		case 2: dao.modificar(null);
+		case 3: dao.borrar(null);
+		case 4: dao.listar();
+		case 5: dao.obtenerPorId();
 		}
 	}
 

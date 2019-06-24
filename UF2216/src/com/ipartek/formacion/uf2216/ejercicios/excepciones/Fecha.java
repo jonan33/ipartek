@@ -6,15 +6,13 @@ import org.joda.time.DateTime;
 
 public class Fecha {
 
-	public static void main(String[] args) {
-		
-
-	}
+	
 	
 	private int año = 0;
 	private int mes = 1;
 	private int dia = 1;
 	public static final int MESES_AÑO = 12;
+	
 	public static boolean esBisiesto(int año) {
 		boolean bisiesto;
 		bisiesto = false;
@@ -60,15 +58,26 @@ public class Fecha {
 		return this.dia;
 	}
 	public void setDia(int dia) {
-		if (this.mes == 2) {
-			if (dia < 1 || dia >28) {
-				throw new FechaException("No se admite ese valor de dia para ese mes");
-			}
+		if (dia < 1) {
+			throw new FechaException("El día no puede ser inferior a 1", new Throwable("Día incorrecto"));
 		}
+		if ((mes == 1 || mes == 3 || mes == 5 || mes == 7 || mes == 8 || mes == 10 || mes == 12) && (dia > 31)) {
+			throw new FechaException("Error! El día no puede ser mayor de 31", new Throwable("Día incorrecto"));
+		}
+		if ((mes == 4 || mes == 6 || mes == 5 || mes == 7 || mes == 8 || mes == 10 || mes == 12) && (dia > 30)) {
+			throw new FechaException("Erro! El día no puede ser mayor de 30", new Throwable("Día incorrecto"));
+		}
+		if (esBisiesto(año) && (dia > 29)) {
+			throw new FechaException("Error! El dia no puede ser mayor de 29",
+					new Throwable("Día incorrecto"));
+		}
+		if (!esBisiesto(año) && (dia > 28)) {
+			throw new FechaException("Error! El dia no puede ser mayor de 28",
+					new Throwable("Día incorrecto"));
+		}
+		this.dia = dia;
 	}
-	public boolean esBisiesto() {
-		return esBisiesto();
-	}
+	
 	public void set(int año, int mes, int dia) {
 		setDia(dia);
 		setMes(mes);
@@ -108,7 +117,9 @@ public class Fecha {
 	}
 	@Override
 	public String toString() {
-		return dia + "/" + mes + "/" + año;
+		String log = "";
+		log = new StringBuffer(log).append(dia).append("/").append(mes).append("/").append(año).toString();
+		return log;
 	}
 	
 	
