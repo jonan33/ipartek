@@ -1,0 +1,10 @@
+1. ¿Qué habría que hacer si un método que queremos llamar indica que lanza una
+excepción explícita? 
+	A
+
+2. ¿Qué opción escogerías en la pregunta anterior si la excepción fuera implícita? 
+	C
+3. ¿Se puede poner un bloque finally sin un bloque try? 
+		No. Es imprescindible que haya un bloque try.
+4. ¿Se puede poner un bloque finally sin un bloque catch? 
+		Si.

@@ -11,7 +11,8 @@ public interface Crudable<T> {
 	public void borrar();
 	public void listar();
 	public void salir();
-//	public void guardar();
+	public void guardar();
+	public void añadir();
 //	public void cargar();
 //	public void importar();
 	public void exportar();

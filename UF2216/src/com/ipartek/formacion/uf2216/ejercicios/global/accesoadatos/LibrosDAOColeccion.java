@@ -38,6 +38,10 @@ public class LibrosDAOColeccion implements Crudable<Libro> {
 		
 	}
 	
+	public void añadir() {
+		
+	}
+	
 	public void exportar() {
 		FileWriter fw = null;
 		try {
@@ -74,12 +78,17 @@ public class LibrosDAOColeccion implements Crudable<Libro> {
 
 	@Override
 	public Libro obtenerPorId() {
-		return libros.get(0);
+		Scanner so = new Scanner(System.in);
+		int id;
+		System.out.println("Introduzca el id del libro a buscar: ");
+		id = so.nextInt();
+		return libros.get(id);
+		
 	}
 
 	@Override
 	public void insertar(Libro libro) {
-		
+		libros.add(libro);
 	}
 
 	@Override
