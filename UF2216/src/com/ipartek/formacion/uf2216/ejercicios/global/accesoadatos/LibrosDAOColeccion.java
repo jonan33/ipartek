@@ -135,13 +135,10 @@ public class LibrosDAOColeccion implements Crudable<Libro> {
 		Scanner sm = new Scanner(System.in);
 		int id, isbn, edicion;
 		String titulo, genero, descripcion, autor, editorial;
-		String campo;
+		
 		System.out.println("Introduzca el id del libro a modificar: ");
 		id = sm.nextInt();
 		System.out.println(libros.get(id));
-//		System.out.println("Escriba el campo a modificar: ");
-//		System.out.println("id" + "titulo" + "genero" + "descripcion" + "autor" + "edicion" + "isbn" + "editorial");
-//		campo = sm.nextLine();
 		System.out.println("Introduzca el título del libro: ");
 		titulo = sm.nextLine();
 		System.out.println("Introduzca el isbn de libro: ");
@@ -156,8 +153,10 @@ public class LibrosDAOColeccion implements Crudable<Libro> {
 		genero = sm.nextLine();		
 		System.out.println("Introduzca el número de edicion del libro: ");
 		edicion = sm.nextInt();
+		libros.remove(id);
 		insertar(new Libro(id, titulo, isbn, editorial, autor, descripcion, genero, edicion, false));
-		System.out.println("Libro con id: "+libros.get(id)+" actualizado satisfactoriamente");
+		
+		System.out.println("Libro con id: "+ id +" actualizado satisfactoriamente");
 		sm.close();
 	}
 
@@ -171,7 +170,7 @@ public class LibrosDAOColeccion implements Crudable<Libro> {
 		id = sb1.nextInt();
 		libros.remove(id);
 		System.out.println("Libro con id "+id+ " eliminado satisfactoriamente");
-		sb1.close();
+		
 	}
 
 	@Override
