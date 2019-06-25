@@ -69,7 +69,7 @@ public class LibrosDAOColeccion implements Crudable<Libro> {
 		System.out.println("Introduzca el número de edicion del libro: ");
 		edicion = sa.nextInt();
 		insertar(new Libro(id, titulo, isbn, editorial, autor, descripcion, genero, edicion, false));
-		
+		sa.close();
 	}
 	
 	public void exportar() {
@@ -119,10 +119,10 @@ public class LibrosDAOColeccion implements Crudable<Libro> {
 		Scanner so = new Scanner(System.in);
 		int id;
 		System.out.println("Introduzca el id del libro a buscar: ");
-		id = so.nextInt();
+		id = so.nextInt() - 1;
+		
 		System.out.println(libros.get(id));
 		return libros.get(id);
-		
 	}
 
 	@Override
@@ -132,10 +132,33 @@ public class LibrosDAOColeccion implements Crudable<Libro> {
 
 	@Override
 	public void modificar(Libro libro) {
-		libros.get((int) libro.getId()).setTitulo(libro.getTitulo());
-		libros.get((int)libro.getIsbn()).setIsbn(libro.getIsbn());
-		System.out.println("Libro con id: "+libro.getId()+" actualizado satisfactoriamente");
-		
+		Scanner sm = new Scanner(System.in);
+		int id, isbn, edicion;
+		String titulo, genero, descripcion, autor, editorial;
+		String campo;
+		System.out.println("Introduzca el id del libro a modificar: ");
+		id = sm.nextInt();
+		System.out.println(libros.get(id));
+//		System.out.println("Escriba el campo a modificar: ");
+//		System.out.println("id" + "titulo" + "genero" + "descripcion" + "autor" + "edicion" + "isbn" + "editorial");
+//		campo = sm.nextLine();
+		System.out.println("Introduzca el título del libro: ");
+		titulo = sm.nextLine();
+		System.out.println("Introduzca el isbn de libro: ");
+		isbn = sm.nextInt();
+		System.out.println("Introduzca la editorial del libro: ");
+		editorial = sm.nextLine();
+		System.out.println("Introduzca el autor del libro: ");
+		autor = sm.nextLine();
+		System.out.println("Introduzca la descripción del libro: ");
+		descripcion = sm.nextLine();
+		System.out.println("Introduzca el género del libro: ");
+		genero = sm.nextLine();		
+		System.out.println("Introduzca el número de edicion del libro: ");
+		edicion = sm.nextInt();
+		insertar(new Libro(id, titulo, isbn, editorial, autor, descripcion, genero, edicion, false));
+		System.out.println("Libro con id: "+libros.get(id)+" actualizado satisfactoriamente");
+		sm.close();
 	}
 
 	
@@ -148,6 +171,7 @@ public class LibrosDAOColeccion implements Crudable<Libro> {
 		id = sb1.nextInt();
 		libros.remove(id);
 		System.out.println("Libro con id "+id+ " eliminado satisfactoriamente");
+		sb1.close();
 	}
 
 	@Override

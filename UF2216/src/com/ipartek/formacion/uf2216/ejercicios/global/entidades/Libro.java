@@ -1,8 +1,5 @@
 package com.ipartek.formacion.uf2216.ejercicios.global.entidades;
 
-import java.text.SimpleDateFormat;
-import java.util.Date;
-
 public class Libro {
 	
 	private int isbn;

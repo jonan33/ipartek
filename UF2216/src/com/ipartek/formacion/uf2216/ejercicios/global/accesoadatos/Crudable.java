@@ -2,8 +2,6 @@ package com.ipartek.formacion.uf2216.ejercicios.global.accesoadatos;
 
 import java.io.IOException;
 
-import com.ipartek.formacion.uf2216.ejercicios.global.entidades.Libro;
-
 public interface Crudable<T> {
 	public Iterable<T> obtenerTodos();
 	public T obtenerPorId();
