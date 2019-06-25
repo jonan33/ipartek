@@ -1,5 +1,7 @@
 package com.ipartek.formacion.uf2216.ejercicios.global.accesoadatos;
 
+import java.io.BufferedReader;
+import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -34,11 +36,39 @@ public class LibrosDAOColeccion implements Crudable<Libro> {
 	
 	private ArrayList<Libro> libros = new ArrayList<Libro>();
 	
-	public void importar() {
-		
+	public void importar() throws IOException {
+		String row;
+		BufferedReader csvReader = new BufferedReader(new FileReader(RUTA_FICHERO));  
+		while ((row = csvReader.readLine()) != null) {  
+		    String[] data = row.split(",");
+		    // do something with the data
+		}
+		csvReader.close(); 
 	}
 	
 	public void añadir() {
+		Scanner sa = new Scanner(System.in);
+		String titulo, genero, descripcion, editorial, autor;
+		int id, edicion, isbn;
+		boolean isBorrado;
+		
+		System.out.println("Introduza id del libro: ");
+		id = sa.nextInt();
+		System.out.println("Introduzca el título del libro: ");
+		titulo = sa.nextLine();
+		System.out.println("Introduzca el autor del libro: ");
+		autor = sa.nextLine();
+		System.out.println("Introduzca el isbn de libro: ");
+		isbn = sa.nextInt();
+		System.out.println("Introuduzca el genero del libro: ");
+		genero = sa.nextLine();
+		System.out.println("Introduzca la editorial del libro: ");
+		editorial = sa.nextLine();
+		System.out.println("Introduzca la descripcion del libro: ");
+		descripcion = sa.nextLine();
+		System.out.println("Introduzca el numero de edicion del libro: ");
+		edicion = sa.nextInt();
+		
 		
 	}
 	
@@ -53,6 +83,14 @@ public class LibrosDAOColeccion implements Crudable<Libro> {
 		PrintWriter pw = new PrintWriter(fw, AUTO_FLUSH);
 		for(Libro libro: obtenerTodos()) {
 			pw.println(libro);
+			
+		}
+		pw.close();
+		try {
+			fw.close();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
 		}
 	}
 	
@@ -95,7 +133,7 @@ public class LibrosDAOColeccion implements Crudable<Libro> {
 	public void modificar(Libro libro) {
 		libros.get((int) libro.getId()).setTitulo(libro.getTitulo());
 		libros.get((int)libro.getIsbn()).setIsbn(libro.getIsbn());
-		System.out.println("Cliente con id: "+libro.getId()+" actualizado satisfactoriamente");
+		System.out.println("Libro con id: "+libro.getId()+" actualizado satisfactoriamente");
 		
 	}
 

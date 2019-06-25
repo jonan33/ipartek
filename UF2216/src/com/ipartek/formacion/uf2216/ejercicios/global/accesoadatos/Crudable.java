@@ -1,5 +1,7 @@
 package com.ipartek.formacion.uf2216.ejercicios.global.accesoadatos;
 
+import java.io.IOException;
+
 import com.ipartek.formacion.uf2216.ejercicios.global.entidades.Libro;
 
 public interface Crudable<T> {
@@ -13,8 +15,8 @@ public interface Crudable<T> {
 	public void salir();
 	public void guardar();
 	public void añadir();
-//	public void cargar();
-//	public void importar();
+	public void cargar();
+	public void importar() throws IOException;
 	public void exportar();
 	 
 }
