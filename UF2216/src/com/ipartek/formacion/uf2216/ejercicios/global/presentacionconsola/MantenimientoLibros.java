@@ -35,8 +35,7 @@ public class MantenimientoLibros {
 		
 		opcion = sc.nextInt();
 		
-		switch (opcion){
-		
+		switch (opcion){		
 		case 1: dao.añadir();
 		break;
 		case 2: dao.modificar(null);
@@ -49,6 +48,8 @@ public class MantenimientoLibros {
 		break;
 		case 6: dao.guardar();
 		break;
+		case 7: dao.cargar();
+		break;
 		case 8: dao.importar();
 		break;
 		case 9: dao.exportar();
@@ -57,7 +58,6 @@ public class MantenimientoLibros {
 		break;
 		}
 	} while (opcion != 10);
-		}
+ }
 	
-
 }

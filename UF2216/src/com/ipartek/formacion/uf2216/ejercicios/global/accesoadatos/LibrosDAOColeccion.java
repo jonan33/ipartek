@@ -1,6 +1,7 @@
 package com.ipartek.formacion.uf2216.ejercicios.global.accesoadatos;
 
 import java.io.BufferedReader;
+import java.io.DataOutput;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -50,25 +51,24 @@ public class LibrosDAOColeccion implements Crudable<Libro> {
 		Scanner sa = new Scanner(System.in);
 		String titulo, genero, descripcion, editorial, autor;
 		int id, edicion, isbn;
-		boolean isBorrado;
 		
 		System.out.println("Introduza id del libro: ");
 		id = sa.nextInt();
 		System.out.println("Introduzca el título del libro: ");
 		titulo = sa.nextLine();
-		System.out.println("Introduzca el autor del libro: ");
-		autor = sa.nextLine();
 		System.out.println("Introduzca el isbn de libro: ");
 		isbn = sa.nextInt();
-		System.out.println("Introuduzca el genero del libro: ");
-		genero = sa.nextLine();
 		System.out.println("Introduzca la editorial del libro: ");
 		editorial = sa.nextLine();
+		System.out.println("Introduzca el autor del libro: ");
+		autor = sa.nextLine();
 		System.out.println("Introduzca la descripcion del libro: ");
 		descripcion = sa.nextLine();
+		System.out.println("Introuduzca el genero del libro: ");
+		genero = sa.nextLine();		
 		System.out.println("Introduzca el numero de edicion del libro: ");
 		edicion = sa.nextInt();
-		
+		insertar(new Libro(id, titulo, isbn, editorial, autor, descripcion, genero, edicion, false));
 		
 	}
 	
