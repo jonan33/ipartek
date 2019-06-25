@@ -17,8 +17,8 @@ public class MantenimientoLibros {
 		
 		dao.insertar(new Libro(1, "Juego de tronos", 656153, "alfaguara", "jonan", "Un rollazo", "Intriga", 2, true));
 		dao.insertar(new Libro(2, "Harry Potter", 613531, "Susaeta", "jonan", "Obra de arte", "Romantico", 1, false));
-		dao.insertar(new Libro(3, "Los juegos del hambre", 315238, "alfaguara", "asier", "magnifica novela grafica", "comic", 5, false));
-		dao.insertar(new Libro(4, "El hombre en el catillo", 6461665, "RBA", "mikel", "Clasico de la ficción", "Ciencia ficción", 8, false));
+		dao.insertar(new Libro(3, "Los juegos del hambre", 315238, "planeta", "asier", "magnifica novela grafica", "comic", 5, false));
+		dao.insertar(new Libro(4, "El hombre en el castillo", 6461665, "RBA", "mikel", "Clásico de la ficción", "Ciencia ficción", 8, false));
 		
 		do {
 		System.out.println("1. Añadir");

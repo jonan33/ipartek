@@ -52,8 +52,8 @@ public class LibrosDAOColeccion implements Crudable<Libro> {
 		String titulo, genero, descripcion, editorial, autor;
 		int id, edicion, isbn;
 		
-		System.out.println("Introduza id del libro: ");
-		id = sa.nextInt();
+		System.out.println("Introduzca id del libro: ");
+		id = sa.nextInt(); 
 		System.out.println("Introduzca el título del libro: ");
 		titulo = sa.nextLine();
 		System.out.println("Introduzca el isbn de libro: ");
@@ -62,11 +62,11 @@ public class LibrosDAOColeccion implements Crudable<Libro> {
 		editorial = sa.nextLine();
 		System.out.println("Introduzca el autor del libro: ");
 		autor = sa.nextLine();
-		System.out.println("Introduzca la descripcion del libro: ");
+		System.out.println("Introduzca la descripción del libro: ");
 		descripcion = sa.nextLine();
-		System.out.println("Introuduzca el genero del libro: ");
+		System.out.println("Introduzca el género del libro: ");
 		genero = sa.nextLine();		
-		System.out.println("Introduzca el numero de edicion del libro: ");
+		System.out.println("Introduzca el número de edicion del libro: ");
 		edicion = sa.nextInt();
 		insertar(new Libro(id, titulo, isbn, editorial, autor, descripcion, genero, edicion, false));
 		
@@ -120,6 +120,7 @@ public class LibrosDAOColeccion implements Crudable<Libro> {
 		int id;
 		System.out.println("Introduzca el id del libro a buscar: ");
 		id = so.nextInt();
+		System.out.println(libros.get(id));
 		return libros.get(id);
 		
 	}
