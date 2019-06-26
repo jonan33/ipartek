@@ -54,10 +54,12 @@ public class LibrosDAOColeccion implements Crudable<Libro> {
 		
 		System.out.println("Introduzca id del libro: ");
 		id = sa.nextInt(); 
+		sa.nextLine();
 		System.out.println("Introduzca el título del libro: ");
 		titulo = sa.nextLine();
 		System.out.println("Introduzca el isbn de libro: ");
 		isbn = sa.nextInt();
+		sa.nextLine();
 		System.out.println("Introduzca la editorial del libro: ");
 		editorial = sa.nextLine();
 		System.out.println("Introduzca el autor del libro: ");
@@ -70,7 +72,7 @@ public class LibrosDAOColeccion implements Crudable<Libro> {
 		edicion = sa.nextInt();
 		
 		insertar(new Libro(id, titulo, isbn, editorial, autor, descripcion, genero, edicion, false));
-		sa.close();
+		
 	}
 	
 	public void exportar() {
@@ -139,11 +141,13 @@ public class LibrosDAOColeccion implements Crudable<Libro> {
 		
 		System.out.println("Introduzca el id del libro a modificar: ");
 		id = sm.nextInt();
+		sm.nextLine();
 		System.out.println(libros.get(id));
 		System.out.println("Introduzca el título del libro: ");
 		titulo = sm.nextLine();
 		System.out.println("Introduzca el isbn de libro: ");
 		isbn = sm.nextInt();
+		sm.nextLine();
 		System.out.println("Introduzca la editorial del libro: ");
 		editorial = sm.nextLine();
 		System.out.println("Introduzca el autor del libro: ");
@@ -158,7 +162,7 @@ public class LibrosDAOColeccion implements Crudable<Libro> {
 		insertar(new Libro(id, titulo, isbn, editorial, autor, descripcion, genero, edicion, false));
 		
 		System.out.println("Libro con id: "+ id +" actualizado satisfactoriamente");
-		sm.close();
+		
 	}
 
 	
