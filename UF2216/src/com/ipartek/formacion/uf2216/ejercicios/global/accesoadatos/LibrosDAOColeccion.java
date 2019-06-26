@@ -42,7 +42,7 @@ public class LibrosDAOColeccion implements Crudable<Libro> {
 		BufferedReader csvReader = new BufferedReader(new FileReader(RUTA_FICHERO));  
 		while ((row = csvReader.readLine()) != null) {  
 		    String[] data = row.split(",");
-		    // do something with the data
+		    System.out.println(data[0] + ", " + data[1] + ", " + data[2] + ", " + data[3] + ", " + data[4] + ", " + data[5] + ", " + data[6] + ", " + data[7] + ", " + data[8]);
 		}
 		csvReader.close(); 
 	}
@@ -68,6 +68,7 @@ public class LibrosDAOColeccion implements Crudable<Libro> {
 		genero = sa.nextLine();		
 		System.out.println("Introduzca el número de edicion del libro: ");
 		edicion = sa.nextInt();
+		
 		insertar(new Libro(id, titulo, isbn, editorial, autor, descripcion, genero, edicion, false));
 		sa.close();
 	}
