@@ -65,7 +65,7 @@ public class Fecha {
 			throw new FechaException("Error! El día no puede ser mayor de 31", new Throwable("Día incorrecto"));
 		}
 		if ((mes == 4 || mes == 6 || mes == 5 || mes == 7 || mes == 8 || mes == 10 || mes == 12) && (dia > 30)) {
-			throw new FechaException("Erro! El día no puede ser mayor de 30", new Throwable("Día incorrecto"));
+			throw new FechaException("Error! El día no puede ser mayor de 30", new Throwable("Día incorrecto"));
 		}
 		if (esBisiesto(año) && (dia > 29)) {
 			throw new FechaException("Error! El dia no puede ser mayor de 29",

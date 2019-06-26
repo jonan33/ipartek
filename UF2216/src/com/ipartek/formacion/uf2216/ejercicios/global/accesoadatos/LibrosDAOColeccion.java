@@ -2,6 +2,7 @@ package com.ipartek.formacion.uf2216.ejercicios.global.accesoadatos;
 
 import java.io.BufferedReader;
 import java.io.DataOutput;
+import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -40,10 +41,16 @@ public class LibrosDAOColeccion implements Crudable<Libro> {
 	public void importar() throws IOException {
 		String row;
 		BufferedReader csvReader = new BufferedReader(new FileReader(RUTA_FICHERO));  
-		while ((row = csvReader.readLine()) != null) {  
-		    String[] data = row.split(",");
-		    System.out.println(data[0] + ", " + data[1] + ", " + data[2] + ", " + data[3] + ", " + data[4] + ", " + data[5] + ", " + data[6] + ", " + data[7] + ", " + data[8]);
+		try {
+			while ((row = csvReader.readLine()) != null) {  
+			    String[] data = row.split(",");
+			    System.out.println(data[0] + ", " + data[1] + ", " + data[2] + ", " + data[3] + ", " + data[4] + ", " + data[5] + ", " + data[6] + ", " + data[7] + ", " + data[8]);
+			}
+		} catch (java.io.FileNotFoundException exp) {
+			System.out.println("Error! no hay ningun fichero a importar");
+			importar();
 		}
+		
 		csvReader.close(); 
 	}
 	
@@ -122,10 +129,17 @@ public class LibrosDAOColeccion implements Crudable<Libro> {
 		Scanner so = new Scanner(System.in);
 		int id;
 		System.out.println("Introduzca el id del libro a buscar: ");
-		id = so.nextInt() - 1;
-		
-		System.out.println(libros.get(id));
+		id = so.nextInt();
+		try {			
+			System.out.println(libros.get(id));
+//			return libros.get(id);
+		} catch (IndexOutOfBoundsException e) {
+			System.out.println("Error! El id introducido no es válido");
+			obtenerPorId();
+//			return libros.get(id);
+		} 
 		return libros.get(id);
+		
 	}
 
 	@Override
@@ -173,8 +187,14 @@ public class LibrosDAOColeccion implements Crudable<Libro> {
 		Scanner sb1 = new Scanner(System.in);
 		System.out.println("Introduzca el id del libro a borrar: ");
 		id = sb1.nextInt();
-		libros.remove(id);
-		System.out.println("Libro con id "+id+ " eliminado satisfactoriamente");
+		try {
+			libros.remove(id);
+			System.out.println("Libro con id "+ id + " eliminado satisfactoriamente");
+		} catch (IndexOutOfBoundsException e){
+			System.out.println("Error! El id no es válido");
+			borrar();
+		}
+		
 		
 	}
 
