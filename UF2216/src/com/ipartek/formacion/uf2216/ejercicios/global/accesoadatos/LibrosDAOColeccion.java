@@ -13,6 +13,7 @@ import java.util.Scanner;
 import com.ipartek.formacion.uf2216.ejercicios.global.accesoadatos.*;
 
 import com.ipartek.formacion.uf2216.ejercicios.global.entidades.Libro;
+import com.ipartek.formacion.uf2216.ejercicios.global.excepciones.IdException;
 
 public class LibrosDAOColeccion implements Crudable<Libro> {
 	//Data
@@ -104,16 +105,7 @@ public class LibrosDAOColeccion implements Crudable<Libro> {
 		}
 	}
 	
-	
-	 
-	public void guardar() {
-		
-	}
-	
-	public void cargar() {
-		
-	}
-	
+			
 	public void salir() {
 		System.out.println("Hasta luego!");
 		System.exit(0);
@@ -154,8 +146,13 @@ public class LibrosDAOColeccion implements Crudable<Libro> {
 		String titulo, genero, descripcion, autor, editorial;
 		
 		System.out.println("Introduzca el id del libro a modificar: ");
+		
 		id = sm.nextInt();
 		sm.nextLine();
+		if (id > libros.size()) {
+			throw new IdException("Error! No hay ningún libro con ese ID");
+			
+		} else {
 		System.out.println(libros.get(id));
 		System.out.println("Introduzca el título del libro: ");
 		titulo = sm.nextLine();
@@ -176,7 +173,7 @@ public class LibrosDAOColeccion implements Crudable<Libro> {
 		insertar(new Libro(id, titulo, isbn, editorial, autor, descripcion, genero, edicion, false));
 		
 		System.out.println("Libro con id: "+ id +" actualizado satisfactoriamente");
-		
+		}
 	}
 
 	
@@ -194,6 +191,7 @@ public class LibrosDAOColeccion implements Crudable<Libro> {
 			System.out.println("Error! El id no es válido");
 			borrar();
 		}
+
 		
 		
 	}

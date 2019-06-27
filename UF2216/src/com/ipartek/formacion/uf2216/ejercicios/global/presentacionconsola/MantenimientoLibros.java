@@ -15,10 +15,10 @@ public class MantenimientoLibros {
 		Scanner sc = new Scanner(System.in);
 		int opcion = 0;
 		
-		dao.insertar(new Libro(1, "Juego de tronos", 656153, "alfaguara", "jonan", "Un rollazo", "Intriga", 2, true));
-		dao.insertar(new Libro(2, "Harry Potter", 613531, "Susaeta", "jonan", "Obra de arte", "Romantico", 1, false));
-		dao.insertar(new Libro(3, "Los juegos del hambre", 315238, "planeta", "asier", "magnifica novela grafica", "comic", 5, false));
-		dao.insertar(new Libro(9, "El hombre en el castillo", 6461665, "RBA", "mikel", "Clásico de la ficción", "Ciencia ficción", 8, false));
+		dao.insertar(new Libro(0, "Juego de tronos", 656153, "alfaguara", "jonan", "Un rollazo", "Intriga", 2, true));
+		dao.insertar(new Libro(1, "Harry Potter", 613531, "Susaeta", "jonan", "Obra de arte", "Romantico", 1, false));
+		dao.insertar(new Libro(2, "Los juegos del hambre", 315238, "planeta", "asier", "magnifica novela grafica", "comic", 5, false));
+		dao.insertar(new Libro(3, "El hombre en el castillo", 6461665, "RBA", "mikel", "Clásico de la ficción", "Ciencia ficción", 8, false));
 		
 		do {
 		System.out.println("1. Añadir");
@@ -26,12 +26,10 @@ public class MantenimientoLibros {
 		System.out.println("3. Borrar");
 		System.out.println("4. Listado");
 		System.out.println("5. Buscar por Id");
-		System.out.println("6. Guardar");
-		System.out.println("7. Cargar");
-		System.out.println("8. Importar(CSV)");
-		System.out.println("9. Exportar(CSV)");
-		System.out.println("10. Salir");
-		System.out.println("Seleccione opcion:");
+		System.out.println("6. Importar(CSV)");
+		System.out.println("7. Exportar(CSV)");
+		System.out.println("0. Salir");
+		System.out.println("Seleccione opción:");
 		
 		opcion = sc.nextInt();
 		
@@ -46,18 +44,14 @@ public class MantenimientoLibros {
 		break;
 		case 5: dao.obtenerPorId();
 		break;
-		case 6: dao.guardar();
+		case 6: dao.importar();
 		break;
-		case 7: dao.cargar();
+		case 7: dao.exportar();
 		break;
-		case 8: dao.importar();
-		break;
-		case 9: dao.exportar();
-		break;
-		case 10: dao.salir();
+		case 0: dao.salir();
 		break;
 		}
-	} while (opcion != 10);
+	} while (opcion != 0);
 		sc.close();
  }
 	
