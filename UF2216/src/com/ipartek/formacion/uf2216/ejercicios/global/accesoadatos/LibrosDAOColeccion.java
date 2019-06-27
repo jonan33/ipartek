@@ -63,6 +63,7 @@ public class LibrosDAOColeccion implements Crudable<Libro> {
 		System.out.println("Introduzca id del libro: ");
 		id = sa.nextInt(); 
 		sa.nextLine();
+		
 		System.out.println("Introduzca el título del libro: ");
 		titulo = sa.nextLine();
 		System.out.println("Introduzca el isbn de libro: ");
@@ -122,13 +123,9 @@ public class LibrosDAOColeccion implements Crudable<Libro> {
 		int id;
 		System.out.println("Introduzca el id del libro a buscar: ");
 		id = so.nextInt();
-		try {			
-			System.out.println(libros.get(id));
-//			return libros.get(id);
-		} catch (IndexOutOfBoundsException e) {
-			System.out.println("Error! El id introducido no es válido");
-			obtenerPorId();
-//			return libros.get(id);
+		if (id < 0 || id > libros.size()) {
+			throw new IdException("Error! No hay ningún libro con ese Id");
+			
 		} 
 		return libros.get(id);
 		
