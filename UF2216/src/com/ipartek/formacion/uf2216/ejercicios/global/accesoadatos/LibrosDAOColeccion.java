@@ -119,16 +119,20 @@ public class LibrosDAOColeccion implements Crudable<Libro> {
 
 	@Override
 	public Libro obtenerPorId() {
+		Libro l = null;
 		Scanner so = new Scanner(System.in);
 		int id;
 		System.out.println("Introduzca el id del libro a buscar: ");
 		id = so.nextInt();
-		if (id < 0 || id > libros.size()) {
-			throw new IdException("Error! No hay ningún libro con ese Id");
-			
-		} 
-		return libros.get(id);
 		
+		for(Libro libro: obtenerTodos()) {
+			if(libro.getId() == id) {
+				l = libro;
+				System.out.println(l);
+				break;
+			}
+		}
+		return l;
 	}
 
 	@Override
@@ -139,18 +143,22 @@ public class LibrosDAOColeccion implements Crudable<Libro> {
 	@Override
 	public void modificar(Libro libro) {
 		Scanner sm = new Scanner(System.in);
-		int id, isbn, edicion;
+		int  id, isbn, edicion;
+		
 		String titulo, genero, descripcion, autor, editorial;
 		
 		System.out.println("Introduzca el id del libro a modificar: ");
 		
 		id = sm.nextInt();
 		sm.nextLine();
-		if (id > libros.size()) {
-			throw new IdException("Error! No hay ningún libro con ese ID");
-			
-		} else {
-		System.out.println(libros.get(id));
+		for(Libro l: obtenerTodos()) {
+			if(l.getId() == id) {
+				System.out.println(l);
+				l = libro;
+				break;
+			}
+		}
+		
 		System.out.println("Introduzca el título del libro: ");
 		titulo = sm.nextLine();
 		System.out.println("Introduzca el isbn de libro: ");
@@ -166,11 +174,13 @@ public class LibrosDAOColeccion implements Crudable<Libro> {
 		genero = sm.nextLine();		
 		System.out.println("Introduzca el número de edicion del libro: ");
 		edicion = sm.nextInt();
+		System.out.println("El libro se va a eliminar");
 		libros.remove(id);
+		System.out.println("Libro eliminado");
 		insertar(new Libro(id, titulo, isbn, editorial, autor, descripcion, genero, edicion, false));
 		
 		System.out.println("Libro con id: "+ id +" actualizado satisfactoriamente");
-		}
+		
 	}
 
 	
