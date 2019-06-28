@@ -18,14 +18,14 @@ public class MantenimientoLibros {
 		dao.insertar(new Libro(0, "Juego de tronos", 656153, "alfaguara", "jonan", "Un rollazo", "Intriga", 2, true));
 		dao.insertar(new Libro(1, "Harry Potter", 613531, "Susaeta", "jonan", "Obra de arte", "Romantico", 1, false));
 		dao.insertar(new Libro(2, "Los juegos del hambre", 315238, "planeta", "asier", "magnifica novela grafica", "comic", 5, false));
-		dao.insertar(new Libro(3, "El hombre en el castillo", 6461665, "RBA", "mikel", "Clásico de la ficción", "Ciencia ficción", 8, false));
+		dao.insertar(new Libro(9, "El hombre en el castillo", 6461665, "RBA", "mikel", "Clásico de la ficción", "Ciencia ficción", 8, false));
 		
 		do {
 		System.out.println("1. Añadir");
-		System.out.println("2. Modificar");
-		System.out.println("3. Borrar");
-		System.out.println("4. Listado");
-		System.out.println("5. Buscar por Id");
+		System.out.println("2. Listar");
+		System.out.println("3. Buscar por Id");
+		System.out.println("4. Borrar");
+		System.out.println("5. Modificar");
 		System.out.println("6. Importar(CSV)");
 		System.out.println("7. Exportar(CSV)");
 		System.out.println("0. Salir");
@@ -36,13 +36,13 @@ public class MantenimientoLibros {
 		switch (opcion){		
 		case 1: dao.añadir();
 		break;
-		case 2: dao.modificar(null);
+		case 2: dao.listar();
 		break;
-		case 3: dao.borrar();
+		case 3: dao.obtenerPorId(opcion);
 		break;
-		case 4: dao.listar();
+		case 4: dao.borrar();
 		break;
-		case 5: dao.obtenerPorId();
+		case 5: dao.modificar(null);
 		break;
 		case 6: dao.importar();
 		break;

@@ -4,7 +4,7 @@ import java.io.IOException;
 
 public interface Crudable<T> {
 	public Iterable<T> obtenerTodos();
-	public T obtenerPorId();
+	public T obtenerPorId(int id);
 	
 	public void insertar(T objeto);
 	public void modificar(T objeto);

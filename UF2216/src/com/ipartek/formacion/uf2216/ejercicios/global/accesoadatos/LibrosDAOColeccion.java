@@ -118,11 +118,11 @@ public class LibrosDAOColeccion implements Crudable<Libro> {
 	}
 
 	@Override
-	public Libro obtenerPorId() {
+	public Libro obtenerPorId(int id) {
 		Libro l = null;
 		Scanner so = new Scanner(System.in);
-		int id;
-		System.out.println("Introduzca el id del libro a buscar: ");
+//		int id1;
+		System.out.println("Introduzca el id del libro: ");
 		id = so.nextInt();
 		
 		for(Libro libro: obtenerTodos()) {
@@ -174,11 +174,8 @@ public class LibrosDAOColeccion implements Crudable<Libro> {
 		genero = sm.nextLine();		
 		System.out.println("Introduzca el número de edicion del libro: ");
 		edicion = sm.nextInt();
-		System.out.println("El libro se va a eliminar");
-		libros.remove(id);
-		System.out.println("Libro eliminado");
+		libros.remove(obtenerPorId(id));
 		insertar(new Libro(id, titulo, isbn, editorial, autor, descripcion, genero, edicion, false));
-		
 		System.out.println("Libro con id: "+ id +" actualizado satisfactoriamente");
 		
 	}
@@ -192,7 +189,9 @@ public class LibrosDAOColeccion implements Crudable<Libro> {
 		System.out.println("Introduzca el id del libro a borrar: ");
 		id = sb1.nextInt();
 		try {
-			libros.remove(id);
+			
+			
+			libros.remove(obtenerPorId(id));
 			System.out.println("Libro con id "+ id + " eliminado satisfactoriamente");
 		} catch (IndexOutOfBoundsException e){
 			System.out.println("Error! El id no es válido");
