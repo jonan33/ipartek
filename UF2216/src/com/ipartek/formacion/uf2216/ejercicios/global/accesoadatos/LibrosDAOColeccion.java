@@ -1,8 +1,6 @@
 package com.ipartek.formacion.uf2216.ejercicios.global.accesoadatos;
 
 import java.io.BufferedReader;
-import java.io.DataOutput;
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -62,8 +60,7 @@ public class LibrosDAOColeccion implements Crudable<Libro> {
 		
 		System.out.println("Introduzca id del libro: ");
 		id = sa.nextInt(); 
-		sa.nextLine();
-		
+		sa.nextLine();		
 		System.out.println("Introduzca el título del libro: ");
 		titulo = sa.nextLine();
 		System.out.println("Introduzca el isbn de libro: ");
@@ -121,7 +118,7 @@ public class LibrosDAOColeccion implements Crudable<Libro> {
 	public Libro obtenerPorId(int id) {
 		Libro l = null;
 		Scanner so = new Scanner(System.in);
-//		int id1;
+
 		System.out.println("Introduzca el id del libro: ");
 		id = so.nextInt();
 		

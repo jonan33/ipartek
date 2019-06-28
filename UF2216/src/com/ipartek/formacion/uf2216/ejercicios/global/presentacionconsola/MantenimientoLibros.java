@@ -15,10 +15,10 @@ public class MantenimientoLibros {
 		Scanner sc = new Scanner(System.in);
 		int opcion = 0;
 		
-		dao.insertar(new Libro(0, "Juego de tronos", 656153, "alfaguara", "jonan", "Un rollazo", "Intriga", 2, true));
-		dao.insertar(new Libro(1, "Harry Potter", 613531, "Susaeta", "jonan", "Obra de arte", "Romantico", 1, false));
-		dao.insertar(new Libro(2, "Los juegos del hambre", 315238, "planeta", "asier", "magnifica novela grafica", "comic", 5, false));
-		dao.insertar(new Libro(9, "El hombre en el castillo", 6461665, "RBA", "mikel", "Clásico de la ficción", "Ciencia ficción", 8, false));
+		dao.insertar(new Libro(0, "Juego de tronos", 656153, "alfaguara", "george martin", "Disputa del trono del reino", "Fantasia", 2, false));
+		dao.insertar(new Libro(1, "Harry Potter", 613531, "Susaeta", "jk rowling", "niños magos van a la escuela", "Aventuras", 1, false));
+		dao.insertar(new Libro(2, "Los juegos del hambre", 315238, "planeta", "suzzane collins", "copia de battle royale", "accion", 5, false));
+		dao.insertar(new Libro(9, "El hombre en el castillo", 6461665, "RBA", "philip dick", "el eje gana la II guerra mundial", "Ciencia ficción", 8, false));
 		
 		do {
 		System.out.println("1. Añadir");
