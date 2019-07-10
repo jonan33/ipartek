@@ -1,0 +1,326 @@
+/*csslint order-alphabetical:false, qualified-headings:false, unique-headings:false, box-sizing:false */
+
+body {
+    font-family: 'Montserrat', sans-serif;
+
+    margin: 0;
+
+    line-height: 1.5em;
+}
+
+body > header,
+body > footer {
+    background: black;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 1em 0;
+}
+
+body > header {
+    font-family: 'Arima Madurai', cursive;
+
+    text-transform: uppercase;
+
+}
+
+h1 {
+    font-size: 3em;
+    line-height: 1.2em;
+}
+
+h1:before, h1:after {
+    content: " 😀 ";
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: blue;
+}
+
+body > nav {
+    background: darkblue;
+    color: white;
+    
+    top:0;
+    /* TODO: Activar Sticky */
+    /* position: -webkit-sticky;
+    position: sticky; */
+}
+
+body > nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+body > nav li > ul {
+    position: absolute;
+    
+    top: 2em;
+    left: 0;
+    
+    display: none;
+}
+
+body > nav li > ul > li {
+    background: darkblue;
+    color: white;
+    
+    width: 5.5em;
+}
+
+body > nav li:hover ul {
+    background: darkblue;
+    color: white;
+    
+    padding-bottom: 0;
+    bottom: 0;
+    
+    display: block;
+}
+
+body > nav li {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 0;
+    bottom: 0;
+    padding: 0.5em;
+
+    transition: bottom 1s ease, padding-bottom 1s ease;
+}
+
+body > nav li a {
+    padding: 0.5em;
+}
+
+body > nav > ul > li:hover > a, body > nav > ul > li:hover > ul > li:hover > a {
+    background: white;
+    color: darkblue;
+    
+    text-decoration: none;
+}
+
+main {
+    margin: 1em;
+}
+
+h2 {
+    font-size: 2em;
+    font-weight: bold;
+    margin: 1em 0;
+}
+
+article > h2 {
+    font-size: 1.5em;
+}
+
+p {
+    margin: 1em 0;
+}
+
+body > header p {
+    margin: 0;
+}
+
+.chapa :not(h2) {
+    column-count: 2;
+}
+
+table {
+    box-sizing: border-box;
+    border: 1px solid black;
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: grey 0.2em 0.2em 0.4em;
+    width: 100%;
+}
+
+th {
+    background: darkblue;
+    color: white;
+    font-weight: bold;
+}
+
+thead,
+tfoot,
+thead th,
+tfoot th {
+    background: black;
+}
+
+
+td,
+th {
+    padding: 0.5em;
+    border-bottom: 1px solid black;
+    text-align: left;
+}
+
+tr:nth-child(odd) {
+    background: lightgray;
+}
+
+tbody th {
+    width: 1em;
+}
+
+ol {
+    padding-left: 1em;
+}
+
+main li:before {
+    content: "* ";
+}
+
+dl {
+    background: rgb(230, 230, 230);
+    /* #eeeeee */
+
+    padding: 1em;
+    border-radius: 5px;
+}
+
+dt {
+    font-weight: bold;
+}
+
+dd {
+    font-family: monospace;
+    font-size: 1.5em;
+    font-variant: small-caps;
+}
+
+dd::first-letter {
+    font-size: 1.5em;
+}
+
+form {
+    line-height: 2.5em;
+}
+
+label {
+    box-sizing: border-box;
+    float: left;
+    width: 6em;
+    font-weight: bold;
+    text-align: right;
+    padding-right: 1em;
+}
+
+input {
+    box-sizing: border-box;
+    border-radius: 3px;
+    border: 1px solid black;
+    width: 66%;
+    padding: 5px;
+}
+
+button {
+    background: darkblue;
+    color: white;
+    font-weight: bold;
+    padding: 0.5em;
+    border-radius: 5px;
+    border: 0;
+    text-transform: uppercase;
+    margin-left: 7em;
+}
+
+button:hover {
+    transition-duration: 1s;
+    background: blue;
+}
+
+body > aside {
+    background: darkblue;
+    color: white;
+    
+    padding: 0.5em;
+}
+
+body > aside h2 {
+    display: none;
+}
+
+body > aside ul {
+    margin: 0;
+}
+
+body > aside li {
+    display: inline;
+    list-style: none;
+}
+
+body > aside li a {
+    padding: 0.5em;
+}
+
+body > aside li:hover a{
+    background: white;
+    color: darkblue;
+    text-decoration: none;
+}
+
+/* Posicionamiento de capas */
+
+section {
+    clear:both;
+    width: 100%;
+}
+
+article {
+    box-sizing: border-box;
+    float: left;
+    width: 50%;
+    padding: 1em;
+}
+
+aside {
+    clear: both;
+    width: 100%;
+}
+
+@media (max-width: 840px) {
+    article {
+        width: 100%;
+    }
+    
+    .chapa :not(h2) {
+        column-count: 1;
+    }
+    
+    label {
+        /*
+        width: 100%;
+        text-align: left;
+        padding-right: 0;
+        */
+        display: none;
+    }
+
+    input {
+        width: 100%;
+    }
+    
+    form {
+        line-height: 1.5em;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+

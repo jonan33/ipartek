@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Para visualización correcta en móviles -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Ejemplo HTML</title>
+
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.1/themes/base/jquery.ui.all.css" />
+    <link rel="stylesheet" href="css/datetime-local-polyfill.css" />
+
+    <link href="https://fonts.googleapis.com/css?family=Arima+Madurai|Montserrat&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/index.css" />
+
+    <!--
+       <style>
+        body {
+            font-family: sans-serif;
+        }
+    </style>
+    -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.1/jquery-ui.min.js"></script>
+    <script src="js/modernizr.min.js"></script>
+
+    <script src="js/datetime-local-polyfill.min.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>Mantenimiento Clientes</h1>
+
+    </header>
+
+    <nav>
+
+        <h2>Clientes</h2>
+
+
+    </nav>
+
+    <main>
+        <section>
+            <article id="tablas">
+                <h2>Tabla</h2>
+                <ul id="lista"></ul>
+                <table id="tabla">
+                    <thead>
+                        <tr>
+                            <th>Id</th>
+                            <th>Nombre</th>
+                            <th>Apellido</th>
+                            <th>Opciones</th>
+                        </tr>
+                    </thead>
+                    <tbody id="registro">
+
+                    </tbody>
+                </table>
+            </article>
+            <article id="formularios">
+                <h3>Añadir</h3>
+                <form action="#" method="get">
+                    <div>
+                        <label for="id">ID</label>
+                        <input id="id" name="id" placeholder="Pon el ID" />
+                    </div>
+                    <div>
+                        <label for="nombre">Nombre</label>
+                        <input id="nombre" name="nombre" placeholder="Pon tu nombre" />
+                    </div>
+                    <div>
+                        <label for="apellido">Apellido</label>
+                        <input id="apellido" name="apellido" placeholder="Apellido" />
+                    </div>
+
+
+                    <div>
+                        <button>Aceptar</button>
+                    </div>
+                </form>
+            </article>
+        </section>
+
+
+    </main>
+</body>
+
+</html>
