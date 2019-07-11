@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+
+    <link rel="stylesheet" href="css/fontawesome.all.min.css" />
+
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/print.css" media="print" />
+
+    <title>Hello, world!</title>
+</head>
+
+<body class="container-fluid">
+    <div class="toast" role="alert" aria-live="assertive" aria-atomic="true" data-delay="10000" style="position: absolute; top: 0; right: 0; z-index: 1">
+        <div class="toast-header">
+            <strong class="mr-auto">Bootstrap</strong>
+            <small>¿A que mola'</small>
+            <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="toast-body">
+            Esto es una tostada de bootstrap
+        </div>
+    </div>
+    <div class="row">
+        <header class="col-12 jumbotron text-center" style="position: sticky">
+            <h1 class="display-1">Panadería Pepe</h1>
+            <p class="lead">Pequeños ejemplos HTML</p>
+
+
+
+
+            <nav class="col-12 navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+                <a class="navbar-brand" href="#">Menú</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle active" href="#quienes" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Quienes Somos
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Pepe</a>
+                                <a class="dropdown-item" href="#">Manolo</a>
+                                <a class="dropdown-item" href="#">María</a>
+                                <a class="dropdown-item" href="#">Nieves</a>
+                            </div>
+                        </li>
+
+
+                        <li class="nav-item"> <a class="nav-link" href="#servicios">Servicios</a>
+
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#productos">Productos</a>
+                        </li>
+                        <li class="nav-item"> <a class="nav-link" href="#noticias">Noticias</a>
+
+                        </li>
+                        <li class="nav-item"> <a class="nav-link" href="#contacto">Contacto</a></li>
+                    </ul>
+
+                    <!-- Search form -->
+                    <form class="form-inline md-form form-sm">
+                        <input class="form-control form-control-sm mr-3 w-75" type="text" placeholder="Search" aria-label="Search">
+                        <i class="fas fa-search" aria-hidden="true"></i>
+                    </form>
+
+                </div>
+            </nav>
+        </header>
+        <div class="col-12 d-print-none alert alert-info alert-dismissible fade show" role="alert">
+            Bienvenidos a esta demostración de Bootstrap
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+
+        <main class="col-12">
+            <section class="row">
+
+                <article id="quienes" name="quienes" class="quienes">
+                    <h2>Quienes Somos</h2>
+                    <h3>Historia</h3>
+                    <p>La historia del pan en la alimentación se desarrolla paralela a la historia del uso de los
+                        cereales por parte del ser humano. El pan es un producto directo del procesado
+                        manual de los cereales (procesado que con posterioridad se transformó en mecánico)
+                        y es muy posible que fuese la primera aplicación alimenticia de estos. El pan, el aceite
+                        y el vino quizás fueron los primeros alimentos procesados en la historia de la
+                        humanidad.</p>
+                    <p>Los cereales, por sí solos, no pueden ser digeridos adecuadamente por el aparato
+                        digestivo humano. Esta es la razón por la que los cereales son artificialmente
+                        procesados (molidos, remojados, etc.) y solo a partir de este momento empezaron a
+                        convertirse en alimentos básicos para el hombre, aportando carbohidratos, los cuales
+                        se complementarían con las proteínas procedentes de las carnes.</p>
+                    <p>Así pues, el pan primigenio (elaborado con especies antiguas de cebada) pudo haber
+                        sido uno de los primeros alimentos elaborados de la historia de la alimentación.
+                        Algunos trabajos de investigación afirman que el ser humano empezó a cocinar los
+                        cereales antes que a elaborar el pan.</p>
+                    <h3>Equipo</h3>
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="imgs/pepe.jpeg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Pepe</h5>
+                            <h6>Cargo: Propietario</h6>
+                            <p class="card-text">Tras una exitosa carrera como futbolista, Pepe cumplió el sueño de su vida de montar una panadería.</p>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="imgs/manolo.jpeg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Manolo</h5>
+                            <h6>Cargo: Panadero principal</h6>
+                            <p class="card-text">Manolo tiene 10 años en la elaboración de pan artesanal. Sus baguettes son las mejores de la ciudad.</p>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="imgs/maria.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">María</h5>
+                            <h6>Cargo: Aprendiz</h6>
+                            <p class="card-text">María es la última incorporación a la familia de Panadería Pepe. Tras haberse gradudado en la Escuela Superior de hostelería de Bilbao como primera de su promoción no podiamos desaprovechar la ocasión de contratarla. </p>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="imgs/nieves.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Nieves</h5>
+                            <h6>Cargo: Pastelera</h6>
+                            <p class="card-text">Nieves es la pastelera del negocio. Domina el arte de la repostería, especialmente las tartas.</p>
+                        </div>
+                    </div>
+
+                </article>
+
+                <article id="servicios" class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                    <h2>Servicios</h2>
+                    <h4>Introducción a los servicios:</h4>
+                    <p>Le ofrecemos un trato experto con ideas personalizadas para usted, las propuestas de
+                        catering más innovadoras servidas con la calidad de siempre a empresas y
+                        particulares</p>
+                    <p>Realizamos y asesoramos todo tipo de eventos, fiestas o celebraciones. Disfrutamos
+                        innovando en la cocina y le damos vital importancia a la materia prima y a la rigurosa
+                        elaboración de nuestros productos.</p>
+
+
+                    <div>
+                        <h4>Los servicios que ofrecemos son:</h4>
+                        <ul>
+                            <li><a href="#despacho">Despacho en tienda</a></li>
+                            <li><a href="#domicilio">Servicio a domicilio</a></li>
+                            <li><a href="#catering">Catering</a></li>
+                        </ul>
+                        <div>
+                            <div id="despacho">
+                                <h3>Despacho en tienda</h3>
+                                <img src="imgs/despacho.jpg">
+                                <p>Ponemos emoción en cada plato para que su experiencia sea única. Déjese seducir
+                                    por nuestras propuestas gastronómicas que aúnan tradición y modernidad.</p>
+                                <p>Nuestro equipo de profesionales elabora recetas con productos de primerísima calidad
+                                    para satisfacer las necesidades de nuestros clientes con el máximo rigor y entusiasmo.</p>
+                            </div>
+                            <div id="domicilio">
+                                <h3>Servicio a domicilio</h3>
+                                <img src="imgs/domicilio.png">
+                                <p>Directo a su oficina. Le proponemos un servicio perfecto para desayunos y almuerzos
+                                    de negocios. Escoja entre una amplia selección de productos nutritivos, deliciosos y
+                                    listos para ser degustados. Tómese un respiro, nosotros nos encargamos de todo.</p>
+                            </div>
+                            <div id="catering">
+                                <h3>Catering</h3>
+                                <img src="imgs/catering.jpg">
+                                <p>Confíe en nosotros para organizar una gran velada. Confíe en nuestra larga
+                                    experiencia, flexibilidad para adaptarnos a cualquier espacio, calidad e innovación.
+                                    Deje en nuestras manos una puesta en escena perfecta y un servicio impecable.
+                                    Somos especialistas en agasajar a sus invitados con un trato personal y único.</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </article>
+
+                <article id="productos">
+                    <h2>Productos</h2>
+                    <p>Con la búsqueda de las mejores materias primas empezamos nuestro viaje, para
+                        nosotros es tan importante el destino como los medios para alcanzarlo, por eso solo
+                        adquirimos productos respetuosos con el medio ambiente.</p>
+                    <p>Combinando tradición e innovación aparecen nuestras recetas especiales. Las
+                        mejores materias primas y el amor por nuestro trabajo son el secreto de nuestros
+                        panes especiales: buenos ingredientes y paciencia.</p>
+                    <p>Nuestros panes creativos son el fruto de nuestra apuesta por la innovación y la fusión
+                        de sabores. Creemos que el pan aún puede sorprenderte sin necesidad de perder su
+                        esencia: un alimento sabroso y saludable para todos los días.</p>
+                        <h3>Lista de productos</h3>
+                        <div class="table-responsive shadow">
+                        <table class="table table-striped table-bordered table-hover table-sm">
+                            <thead class="thead-dark">
+                                <tr>
+                                    <th>Codigo</th>
+                                    <th>Descripción</th>
+                                    <th>Imagen del producto</th>
+                                    <th>Ingredientes</th>
+                                    <th>Valos nutricional</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                    <td>1501104</td>
+                                    <td>Baguette</td>
+                                    <td><img src="imgs/baguette.png"></td>
+                                    <td rowspan="5"><p>Harina de TRIGO, agua, sal, levadura, antialomerante E-170, emulgente; lecitina de SOJA, E-472e y E-491, antioxidante E-300, enzimas, agente de tratamiento de la harina E-920</p><br><strong><u>CONTIENE GLUTEN DE TRIGO Y SOJA</u></strong></td>
+                                    <td rowspan="5">VALOR ENERGETICO<br></td>
+                                </tr>
+                                <tr>
+                                    <td>1501105</td>
+                                    <td>Baguette súper</td>
+                                    <td><img src="imgs/baguette-super.png"></td>
+                                </tr>
+                                <tr>
+                                    <td>1501103</td>
+                                    <td>Barra 350</td>
+                                    <td><img src="imgs/barra350.png"></td>
+                                </tr><tr>
+                                    <td>1513124</td>
+                                    <td>Flauta artesana súper</td>
+                                    <td><img src="imgs/flauta.png"></td>
+                                </tr><tr>
+                                    <td>1508105</td>
+                                    <td>Pan cuadrado súper</td>
+                                    <td><img src="imgs/cuadrado.png"></td>
+                                </tr>
+                                <tr class="table-primary">
+                                    <th>id3</th>
+                                    <td>Nombre3</td>
+                                    <td class="bg-warning">Arrigomulakoetxeaeteteteteteteteteteta</td>
+                                </tr>
+                                <tr>
+                                    <th>id4</th>
+                                    <td>Nombre4</td>
+                                    <td>Apellido4</td>
+                                </tr>
+                                <tr>
+                                    <th>id5</th>
+                                    <td>Nombre5</td>
+                                    <td>Apellido5</td>
+                                </tr>
+                            </tbody>
+                            </table>
+                        </div>
+                </article>
+
+                <article id="formularios" class="col-xl-3 col-lg-4 col-sm-6">
+                    <h2>Formularios</h2>
+
+                    <form action="#" method="get">
+                        <div class="form-group">
+                            <label for="nombre">Nombre</label>
+                            <input id="nombre" name="nombre" placeholder="Pon tu nombre" class="form-control" />
+                        </div>
+                        <div class="form-group">
+                            <label for="apellido">Apellido</label>
+                            <input id="apellido" name="apellido" placeholder="Apellido" class="form-control" />
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="basic-addon1">@</span>
+                                </div>
+                                <input type="email" id="email" name="email" placeholder="Email del trabajo" class="form-control" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="telefono">Teléfono</label>
+                            <input type="tel" id="telefono" name="telefono" placeholder="Teléfono del trabajo" class="form-control" />
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Contraseña</label>
+                            <input type="password" id="password" name="password" placeholder="La contraseña que me diste" class="form-control" />
+                        </div>
+                        <div class="form-group">
+                            <label for="fecha">Fecha</label>
+                            <input type="datetime-local" id="fecha" name="fecha" class="form-control" />
+                        </div>
+                        <div class="form-group">
+                            <label for="fecha-date">Fecha</label>
+                            <input type="date" id="fecha-date" name="fecha-date" class="form-control" />
+                        </div>
+                        <div class="form-group">
+                            <label for="fecha-time">Fecha</label>
+                            <input type="time" id="fecha-time" name="fecha-time" class="form-control" />
+                        </div>
+                        <div class="form-group">
+                            <label for="euros">Euros</label>
+                            <div class="input-group">
+                                <input type="number" step="0.01" id="euros" name="euros" placeholder="Cuánto me vas a donar para que me compre cacharritos" class="form-control" />
+                                <div class="input-group-append">
+                                    <span class="input-group-text" id="basic-addon2">€</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="estilo-informal">Informal</label>
+                            <input type="radio" id="estilo-informal" name="estilo" value="informal" class="form-control" />
+                        </div>
+                        <div class="form-group">
+                            <label for="estilo-formal">Formal</label>
+                            <input type="radio" id="estilo-formal" name="estilo" value="formal" class="form-control" />
+                        </div>
+                        <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                            <label class="btn btn-secondary active">
+                                <input type="radio" name="options" id="option1" autocomplete="off" checked> Active
+                            </label>
+                            <label class="btn btn-secondary">
+                                <input type="radio" name="options" id="option2" autocomplete="off"> Radio
+                            </label>
+                            <label class="btn btn-secondary">
+                                <input type="radio" name="options" id="option3" autocomplete="off"> Radio
+                            </label>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlSelect1">Example select</label>
+                            <select class="form-control" id="exampleFormControlSelect1">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlSelect2">Example multiple select</label>
+                            <select multiple class="form-control" id="exampleFormControlSelect2">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlTextarea1">Example textarea</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+                        <div class="form-group row">
+                            <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
+                            <div class="col-sm-10">
+                                <input type="text" readonly class="form-control-plaintext" id="staticEmail" value="email@example.com">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <button type="button" class="btn btn-primary" data-toggle="popover" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?">Enviar datos <i class="fas fa-save"></i></button>
+                        </div>
+                    </form>
+                </article>
+            </section>
+
+            <section>
+                <h2>CSS</h2>
+            </section>
+
+            <section>
+                <h2>JavaScript</h2>
+            </section>
+        </main>
+
+        <aside class="col-12 d-print-none">
+            <h2>Extras interesantes</h2>
+            <nav>
+                <ul>
+                    <li><a href="extras1">Extras 1</a></li>
+                    <li><a href="extras2">Extras 2</a></li>
+                    <li><a href="extras3">Extras 3</a></li>
+                    <li><a href="extras4">Extras 4</a></li>
+                    <li><a href="extras5">Extras 5</a></li>
+                    <li><a href="extras6">Extras 6</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <footer class="col-12 d-print-none">
+            &copy; 2019 Javier Lete &#128512;
+        </footer>
+
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.4.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <script>
+        $(function() {
+            $('[data-toggle="popover"]').popover();
+            $('.toast').toast('show');
+        });
+
+    </script>
+</body>
+
+</html>
