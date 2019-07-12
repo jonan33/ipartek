@@ -8,13 +8,16 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css" />
-
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    
     <link rel="stylesheet" href="css/fontawesome.all.min.css" />
-
+    
     <link rel="stylesheet" href="css/index.css" />
     <link rel="stylesheet" href="css/print.css" media="print" />
 
-    <title>Hello, world!</title>
+    <title>Panaderia Pepe</title>
 </head>
 
 <body class="container-fluid">
@@ -33,7 +36,6 @@
     <div class="row">
         <header class="col-12 jumbotron text-center" style="position: sticky">
             <h1 class="display-1">Panadería Pepe</h1>
-            <p class="lead">Pequeños ejemplos HTML</p>
 
 
 
@@ -47,17 +49,17 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle active" href="#quienes" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Quienes Somos
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="#">Pepe</a>
-                                <a class="dropdown-item" href="#">Manolo</a>
-                                <a class="dropdown-item" href="#">María</a>
-                                <a class="dropdown-item" href="#">Nieves</a>
+                                <a class="dropdown-item" href="#pepe">Pepe</a>
+                                <a class="dropdown-item" href="#manolo">Manolo</a>
+                                <a class="dropdown-item" href="#maria">María</a>
+                                <a class="dropdown-item" href="#nieves">Nieves</a>
                             </div>
                         </li>
-
+                        
 
                         <li class="nav-item"> <a class="nav-link" href="#servicios">Servicios</a>
 
@@ -73,7 +75,7 @@
 
                     <!-- Search form -->
                     <form class="form-inline md-form form-sm">
-                        <input class="form-control form-control-sm mr-3 w-75" type="text" placeholder="Search" aria-label="Search">
+                        <input class="form-control form-control-sm mr-3 w-75" type="text" placeholder="Buscar" aria-label="Search">
                         <i class="fas fa-search" aria-hidden="true"></i>
                     </form>
 
@@ -109,7 +111,7 @@
                         Algunos trabajos de investigación afirman que el ser humano empezó a cocinar los
                         cereales antes que a elaborar el pan.</p>
                     <h3>Equipo</h3>
-                    <div class="card" style="width: 18rem;">
+                    <div class="card" style="width: 18rem;" id="pepe">
                         <img class="card-img-top" src="imgs/pepe.jpeg" alt="Card image cap">
                         <div class="card-body">
                             <h5 class="card-title">Pepe</h5>
@@ -117,7 +119,7 @@
                             <p class="card-text">Tras una exitosa carrera como futbolista, Pepe cumplió el sueño de su vida de montar una panadería.</p>
                         </div>
                     </div>
-                    <div class="card" style="width: 18rem;">
+                    <div class="card" style="width: 18rem;" id="manolo">
                         <img class="card-img-top" src="imgs/manolo.jpeg" alt="Card image cap">
                         <div class="card-body">
                             <h5 class="card-title">Manolo</h5>
@@ -125,7 +127,7 @@
                             <p class="card-text">Manolo tiene 10 años en la elaboración de pan artesanal. Sus baguettes son las mejores de la ciudad.</p>
                         </div>
                     </div>
-                    <div class="card" style="width: 18rem;">
+                    <div class="card" style="width: 18rem;" id="maria">
                         <img class="card-img-top" src="imgs/maria.jpg" alt="Card image cap">
                         <div class="card-body">
                             <h5 class="card-title">María</h5>
@@ -133,7 +135,7 @@
                             <p class="card-text">María es la última incorporación a la familia de Panadería Pepe. Tras haberse gradudado en la Escuela Superior de hostelería de Bilbao como primera de su promoción no podiamos desaprovechar la ocasión de contratarla. </p>
                         </div>
                     </div>
-                    <div class="card" style="width: 18rem;">
+                    <div class="card" style="width: 18rem;" id="nieves">
                         <img class="card-img-top" src="imgs/nieves.jpg" alt="Card image cap">
                         <div class="card-body">
                             <h5 class="card-title">Nieves</h5>
@@ -203,9 +205,9 @@
                     <p>Nuestros panes creativos son el fruto de nuestra apuesta por la innovación y la fusión
                         de sabores. Creemos que el pan aún puede sorprenderte sin necesidad de perder su
                         esencia: un alimento sabroso y saludable para todos los días.</p>
-                        <h3>Lista de productos</h3>
-                        <div class="table-responsive shadow">
-                        <table class="table table-striped table-bordered table-hover table-sm">
+                    <h3>Lista de productos</h3>
+                    <div class="table-responsive shadow">
+                        <table class="table table-striped table-bordered table-hover table-sm" id="tablaproductos">
                             <thead class="thead-dark">
                                 <tr>
                                     <th>Codigo</th>
@@ -216,12 +218,14 @@
                                 </tr>
                             </thead>
                             <tbody>
-                            <tr>
+                                <tr>
                                     <td>1501104</td>
                                     <td>Baguette</td>
                                     <td><img src="imgs/baguette.png"></td>
-                                    <td rowspan="5"><p>Harina de TRIGO, agua, sal, levadura, antialomerante E-170, emulgente; lecitina de SOJA, E-472e y E-491, antioxidante E-300, enzimas, agente de tratamiento de la harina E-920</p><br><strong><u>CONTIENE GLUTEN DE TRIGO Y SOJA</u></strong></td>
-                                    <td rowspan="5">VALOR ENERGETICO<br></td>
+                                    <td rowspan="5" align="center">
+                                        <p>Harina de TRIGO, agua, sal, levadura, antialomerante E-170, emulgente; lecitina de SOJA, E-472e y E-491, antioxidante E-300, enzimas, agente de tratamiento de la harina E-920</p><br><strong><u>CONTIENE GLUTEN DE TRIGO Y SOJA</u></strong>
+                                    </td>
+                                    <td rowspan="5">VALOR ENERGETICO:<br>266 kcal/100g - 1.127,84 kj/100g<br><br>GRASAS</td>
                                 </tr>
                                 <tr>
                                     <td>1501105</td>
@@ -232,166 +236,325 @@
                                     <td>1501103</td>
                                     <td>Barra 350</td>
                                     <td><img src="imgs/barra350.png"></td>
-                                </tr><tr>
+                                </tr>
+                                <tr>
                                     <td>1513124</td>
-                                    <td>Flauta artesana súper</td>
+                                    <td>Flauta artesana</td>
                                     <td><img src="imgs/flauta.png"></td>
-                                </tr><tr>
+                                </tr>
+                                <tr>
                                     <td>1508105</td>
                                     <td>Pan cuadrado súper</td>
                                     <td><img src="imgs/cuadrado.png"></td>
                                 </tr>
-                                <tr class="table-primary">
-                                    <th>id3</th>
-                                    <td>Nombre3</td>
-                                    <td class="bg-warning">Arrigomulakoetxeaeteteteteteteteteteta</td>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="table-responsive shadow">
+                        <table class="table table-striped table-bordered table-hover table-sm" id="tablaproductossin">
+                            <thead class="thead-dark">
+                                <tr>
+                                    <th>Codigo</th>
+                                    <th>Descripción</th>
+                                    <th>Imagen del producto</th>
+                                    <th>Ingredientes</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1215004</td>
+                                    <td>Caña de chocolate</td>
+                                    <td><img src="imgs/ca%C3%B1a.png"></td>
+                                    <td>
+                                        <p>Harina de TRIGO, margarina (grasas y aceites vegetañes, agua, emulgente (mono y digliceridos de ácidos grasos), acidulante (ácido citrico9, conservante (sorbato potasico), aroma, colorante (betacaroteno)), sal, agua, chocolate (azucar, aceite vegetal, cacao en polvo desgrasado, almidón modificado, grasa vegetal hidrogenada, emulgente y aroma, cobertura chocolate (azucar, grasa vegetal hidrogenada, polvo de cacao desgrasado (27%), emulgentes (lecitina de SOJA, E492) y aroma (vainillina), HUEVO pasteurizado.</p>
+                                        <br>
+                                        <br>
+                                        <strong><u>CONTIENE GLUTEN DE TRIGO, SOJA Y HUEVO</u></strong>
                                 </tr>
                                 <tr>
-                                    <th>id4</th>
-                                    <td>Nombre4</td>
-                                    <td>Apellido4</td>
+                                    <td>1215009</td>
+                                    <td>Palmera</td>
+                                    <td><img src="imgs/palmera.png"></td>
+                                    <td>
+                                        <p>Harina de TRIGO, margarina (grasas y aceites vegetales, agua, emulgente (mono y diglicéridos de ácidos grasos), acidulante (ácido cítrico), conservantes (sorbato potásico), aroma, colorante (betacaroteno)), azucar invertido (30% sacarosa y agua), sal, agua, colorante E-102, azucar.</p>
+                                        <br>
+                                        <br>
+                                        <strong><u>CONTIENE GLUTEN DE TRIGO</u></strong>
+                                    </td>
                                 </tr>
                                 <tr>
-                                    <th>id5</th>
-                                    <td>Nombre5</td>
-                                    <td>Apellido5</td>
+                                    <td>1215010</td>
+                                    <td>Palmera de chocolate</td>
+                                    <td><img src="imgs/palmerachocolate.png"></td>
+                                    <td>
+                                        <p>Harina de TRIGO, margarina (grasas y aceites vegetales, agua, emulgente (mono y digliceridos de acidos grasos), acidulante (acido citrico), conservante (sorbato potasico), aroma, colorante (betacaroteno)), azucar inverido (30%) sacarosa y agua), sal, agua, colorante E-102, E-110, azucar, cobertura chocolate (azucar, grasa y vegetal hidrogenada, polvo de cacao desgrasado(27%), emulgentes (lecitina de SOJA, E492) y aroma (vainillina).</p>
+                                        <br>
+                                        <br>
+                                        <strong><u>CONTIENE GLUTEN DE TRIGO Y SOJA</u></strong>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>1217001</td>
+                                    <td>Croissant</td>
+                                    <td><img src="imgs/croissant.png"></td>
+                                    <td>
+                                        <p>Harina de TRIGO, manteca de cerdo (sain de cerdo, estabilizante E471, antioxidantes, lecitina de SOJA, E321), agua, azucar, mejorante (GLUTEN, emulgente E472e, dextrosa, antioxidante E-320, aceite vegetal y enzimas), levadura, HUEVO pasteurizado, sal.</p>
+                                        <br>
+                                        <br>
+                                        <strong><u>CONTIENE GLUTEN DE TRIGO, SOJA Y HUEVO</u></strong>
+                                    </td>
                                 </tr>
                             </tbody>
-                            </table>
-                        </div>
+                        </table>
+                    </div>
+                    <h3>Conservación de los productos</h3>
+                    <div class="table-responsive shadow">
+                        <table class="table table-striped table-bordered table-hover table-sm" id="tablaconservacion">
+                            <thead class="thead-dark">
+                                <tr align="center">
+                                    <th>Producto</th>
+                                    <th>Temperatura de almacenamiento (Cº)</th>
+                                    <th>Vida útil</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Pan molde</td>
+                                    <td align="center">Ambiente</td>
+                                    <td>2-3 meses</td>
+                                </tr>
+                                <tr>
+                                    <td>Pan precocido</td>
+                                    <td align="center">Ambiente</td>
+                                    <td>1-2 meses</td>
+                                </tr>
+                                <tr>
+                                    <td>Bizcochos</td>
+                                    <td align="center">Ambiente</td>
+                                    <td>3-4 meses</td>
+                                </tr>
+                                <tr>
+                                    <td>Brioches</td>
+                                    <td align="center">Ambiente</td>
+                                    <td>2-3 meses</td>
+                                </tr>
+                                <tr>
+                                    <td>Magdalenas</td>
+                                    <td align="center">Ambiente</td>
+                                    <td>
+                                        2-3 meses
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Croissants</td>
+                                    <td align="center">Ambiente</td>
+                                    <td>15-25 dias</td>
+                                </tr>
+                                <tr>
+                                    <td>Hojaldres</td>
+                                    <td align="center">Ambiente</td>
+                                    <td>45 días</td>
+                                </tr>
+                                <tr>
+                                    <td>Crepes</td>
+                                    <td align="center">Ambiente</td>
+                                    <td>1-2 meses</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </article>
+                <article id="noticias">
+                    <div id="cabecera-noticias">
+                        <h2>Noticias</h2>
+                        <br>
+                        <h4> Nuevo servicio a domicilio ya disponible</h4>
+                        <h5>18/01/18</h5>
+                        <img src="imgs/serviciodomicilio.jpg">
+                        <p>Sois muchos los que lo pediais, y por fin ya es posible...</p>
+                        <a href="#noticiadomicilio">Leer más</a>
+                        <h4>Reserva ya tu roscón de reyes</h4>
+                        <h5>04/01/18</h5>
+                        <img src="imgs/roscon.jpeg">
+                        <p>Tras Navidad y Nochevieja, llega Reyes…</p>
+                        <a href="#noticiaroscon">Leer más</a>
+                        <h4>Ofertas especiales en polvorones y mantecados</h4>
+                        <h5>29/12/17</h5>
+                        <img src="imgs/polvorones.jpeg">
+                        <p>Tan tradicional en estas fechas como el Belén, las 12 uvas o el espumillón es una bandeja de polvorones...</p>
+                        <a href="#noticiapolvorones">Leer más</a>
+                    </div>
+                    <div id="noticias-completas">
+                        <div id="noticiadomicilio">
+                            <h4>Nuevo servicio a domicilio ya disponible</h4>
+                            <h5>18/01/18</h5>
+                            <img src="imgs/serviciodomicilio.jpg">
+                            <p>Sois muchos los que lo pediais, y por fin ya es posible.</p>
+                            <p>Ya puedes disfrutar de nuestra comida en tu casa, la oficina o donde quieras. Con el
+                                servicio de JustEat.es puedes pedir online tus platos preferidos y te los llevamos a
+                                casa recién hechos.</p>
+                            <p>Es muy sencillo, simplemente entrando en <a href="https://www.just-eat.es/" target="_blank">www.just-eat.es</a> o descargando su app,
+                                podrás acceder a nuestra carta, seleccionar tus platos y lo enviamos a la dirección que
+                                desees. Y por supuesto puedes pagar con tarjeta o en efectivo.
+                            </p>
+                            <p>Ya sabes, no cocines y disfruta de nuestros productos en tu casa.</p>
+                        </div>
+                        <div id="noticiaroscon">
+                            <h4>Reserva ya tu roscón de reyes</h4>
+                            <h5>04/01/18</h5>
+                            <img src="imgs/roscon.jpeg">
+                            <p>Tras Navidad y Nochevieja, llega Reyes… La noche más mágica del año. Una noche,
+                                y un día, lleno de ilusión, de nervios, de niños nerviosos por la llegada de sus
+                                Majestades los Reyes Magos…. y por el tradicional Roscón de Reyes.</p>
+                            <p>Un roscón artesano elaborado utilizando materias primas de primera calidad, frutas,
+                                agua de azahar… que podéis encargar ya en nuestra panadería. </p>
+                            <p>Tenemos dos tamaños, uno pequeño, de 4 a 6 raciones por 9 euros, y otro grande, de
+                                12 a 15 raciones, por 20 euros ¡No te descuides, celebra el día de Reyes con nosotros
+                                y reserva ya tu roscón artesano en nuestras tiendas! </p>
+                        </div>
+                        <div id="noticiapolvorones">
+                            <h4>Ofertas especiales en polvorones y mantecados</h4>
+                            <h5>29/12/17</h5>
+                            <img src="imgs/polvorones.jpeg">
+                            <p>Tan tradicional en estas fechas como el Belén, las 12 uvas o el espumillón es una
+                                bandeja de polvorones. Envueltos en papel de seda con doble nudo, nos evocan a
+                                épocas pasadas y son pocos los que se resisten a probarlos.</p>
+                            <p>Su origen se remonta al siglo XVI en Andalucía -Estepa, en Sevilla, y Antequera, en
+                                Málaga, se disputan su autoría-, donde se empezaron a elaborar pequeñas tortas
+                                aprovechando el excedente de trigo y manteca de cerdo. La receta evolucionó cuando
+                                en el siglo XIX una estepeña, Micaela Ruiz Téllez, conocida como La Colchona,
+                                mejoró el proceso de elaboración, "ya que refinaba la harina, la tostaba y conseguía un
+                                producto más suave", aseguran desde el Consejo Regulador de mantecados y
+                                polvorones de Estepa. Con el secado de la harina, el dulce adquiría esa característica
+                                corteza dura y un interior mucho más tierno, aumentando así también su fecha de
+                                caducidad.</p>
+                            <p>
+                                Aunque mantecado y polvorón se parecen en forma, sabor y textura -dulces ovalados
+                                de unos 35 gramos hechos a base de harina de trigo, azúcar molida y manteca de
+                                cerdo- tienen características que los diferencian. "El mantecado lleva canela y suele
+                                estar decorado con ajonjolí (semillas de sésamo) en la parte superior", explica Eusebio
+                                Olmedo, presidente del Consejo Regulador de mantecados y polvorones de Estepa.
+                                Además, éste tiene una textura más mantecosa y compacta y permite la incorporación
+                                de otros ingredientes como avellana, coco, cacao... Por su parte, "el polvorón está
+                                coronado con azúcar glas y lleva trozos de almendra tostada en su interior", afirma
+                                Olmedo. También es más arenoso y se desmigaja con más facilidad por su mayor
+                                contenido en harina, y se reconoce por esa corteza dura que inició La Colchona. "Para
+                                elaborarlos, primero se introduce la manteca en la amasadora, a continuación el
+                                azúcar glas, los ingredientes específicos de cada variedad y por último la harina. Una
+                                vez que la masa queda homogénea, se forman las piezas, se hornean (unos 12 ó 15
+                                minutos) y se dejan enfriar», explican desde el Consejo Regulador de Estepa. Algunas
+                                marcas, como La Chinata, sustituyen la manteca de cerdo de sus polvorones por
+                                aceite de oliva virgen extra, más saludable.
+                            </p>
+                            <p>Desde hace 150 años, la localidad sevillana de Estepa se ha convertido en el
+                                estandarte de los polvorones en España. Tanto es así que cuenta con una certificación
+                                europea de Indicación Geográfica Protegida, lo que "garantiza el cumplimiento de
+                                unos requisitos superiores a los exigidos", explica su Consejo Regulador. Este año,
+                                desde la localidad sevillana se han producido 22.000 toneladas para exportarlas al
+                                resto de regiones españolas. El favorito sigue siendo el polvorón de almendras,
+                                aunque Olmedo recalca que depende de la zona. "Éste es más demandado en el
+                                norte, mientras que en el sur se prefiere más el mantecado". </p>
+                            <p>
+                                Antequera también destaca por su calidad, aunque su comercialización es más
+                                discreta. A pesar de que en el sur radica su origen, la tradición se ha extendido a otras
+                                zonas como Navarra o Castilla y León. Allí, la familia de Ana Pascual lleva cinco
+                                generaciones elaborando los famosos polvorones El Toro, en Tordesillas (Valladolid).
+                                Pero si hay unos que destacan, avalados por los numerosos galardones que han
+                                recibido tanto a nivel nacional como internacional, son los mantecados Felipe II, que
+                                se elaboran en Vitoria y cuya caja de 520 gramos alcanza los 21 euros. La diferencia
+                                de precio se hace patente si lo comparamos con el de otros productos que se
+                                encuentran en el mercado: polvorones que cuestan entre 12 y 8 euros el kilo e incluso
+                                otros que descienden hasta 4 euros el kilo. En este sector, como en otros muchos, la
+                                calidad se paga.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+                <article id="contacto">
+                    <h2>Contacto</h2>
+                    <h4>Información de contacto:</h4>
+                    <p>Dirección: Cubillo, 4 BAJO, 24420, Fabero (LEON)</p>
+                    <p>Teléfono: 987550643</p>
+                    <p>Email: pepe.pan@gmail.com</p>
 
-                <article id="formularios" class="col-xl-3 col-lg-4 col-sm-6">
-                    <h2>Formularios</h2>
+                    <div id="formularios">
+                        <h4>Formulario</h4>
 
-                    <form action="#" method="get">
-                        <div class="form-group">
-                            <label for="nombre">Nombre</label>
-                            <input id="nombre" name="nombre" placeholder="Pon tu nombre" class="form-control" />
-                        </div>
-                        <div class="form-group">
-                            <label for="apellido">Apellido</label>
-                            <input id="apellido" name="apellido" placeholder="Apellido" class="form-control" />
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email</label>
-                            <div class="input-group mb-3">
-                                <div class="input-group-prepend">
-                                    <span class="input-group-text" id="basic-addon1">@</span>
-                                </div>
-                                <input type="email" id="email" name="email" placeholder="Email del trabajo" class="form-control" />
+                        <form action="#" method="get">
+                            <div class="form-group">
+                                <label for="nombre">Nombre y apellidos</label>
+                                <input id="nombre" name="nombre" placeholder="Pon tu nombre y apellidos" class="form-control" />
                             </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="telefono">Teléfono</label>
-                            <input type="tel" id="telefono" name="telefono" placeholder="Teléfono del trabajo" class="form-control" />
-                        </div>
-                        <div class="form-group">
-                            <label for="password">Contraseña</label>
-                            <input type="password" id="password" name="password" placeholder="La contraseña que me diste" class="form-control" />
-                        </div>
-                        <div class="form-group">
-                            <label for="fecha">Fecha</label>
-                            <input type="datetime-local" id="fecha" name="fecha" class="form-control" />
-                        </div>
-                        <div class="form-group">
-                            <label for="fecha-date">Fecha</label>
-                            <input type="date" id="fecha-date" name="fecha-date" class="form-control" />
-                        </div>
-                        <div class="form-group">
-                            <label for="fecha-time">Fecha</label>
-                            <input type="time" id="fecha-time" name="fecha-time" class="form-control" />
-                        </div>
-                        <div class="form-group">
-                            <label for="euros">Euros</label>
-                            <div class="input-group">
-                                <input type="number" step="0.01" id="euros" name="euros" placeholder="Cuánto me vas a donar para que me compre cacharritos" class="form-control" />
-                                <div class="input-group-append">
-                                    <span class="input-group-text" id="basic-addon2">€</span>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="basic-addon1">@</span>
+                                    </div>
+                                    <input type="email" id="email" name="email" placeholder="Email personal" class="form-control" />
                                 </div>
                             </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="estilo-informal">Informal</label>
-                            <input type="radio" id="estilo-informal" name="estilo" value="informal" class="form-control" />
-                        </div>
-                        <div class="form-group">
-                            <label for="estilo-formal">Formal</label>
-                            <input type="radio" id="estilo-formal" name="estilo" value="formal" class="form-control" />
-                        </div>
-                        <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                            <label class="btn btn-secondary active">
-                                <input type="radio" name="options" id="option1" autocomplete="off" checked> Active
-                            </label>
-                            <label class="btn btn-secondary">
-                                <input type="radio" name="options" id="option2" autocomplete="off"> Radio
-                            </label>
-                            <label class="btn btn-secondary">
-                                <input type="radio" name="options" id="option3" autocomplete="off"> Radio
-                            </label>
-                        </div>
-                        <div class="form-group">
-                            <label for="exampleFormControlSelect1">Example select</label>
-                            <select class="form-control" id="exampleFormControlSelect1">
-                                <option>1</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                                <option>5</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="exampleFormControlSelect2">Example multiple select</label>
-                            <select multiple class="form-control" id="exampleFormControlSelect2">
-                                <option>1</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                                <option>5</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="exampleFormControlTextarea1">Example textarea</label>
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                        </div>
-                        <div class="form-group row">
-                            <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
-                            <div class="col-sm-10">
-                                <input type="text" readonly class="form-control-plaintext" id="staticEmail" value="email@example.com">
+                            <div class="form-group">
+                                <label for="telefono">Teléfono</label>
+                                <input type="tel" id="telefono" name="telefono" placeholder="Teléfono de contacto" class="form-control" />
                             </div>
-                        </div>
-                        <div class="form-group">
-                            <button type="button" class="btn btn-primary" data-toggle="popover" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?">Enviar datos <i class="fas fa-save"></i></button>
-                        </div>
-                    </form>
+                            <div class="form-group">
+                                <label for="exampleFormControlSelect1">Departamento al que se dirige</label>
+                                <select class="form-control" id="exampleFormControlSelect1">
+                                    <option>Atención al cliente</option>
+                                    <option>Recursos humanos</option>
+                                    <option>Marketing</option>
+                                    <option>Otro</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleFormControlTextarea1">Mensaje</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="estilo-informal">Aceptar la politica de privacidad</label>
+                                <input type="radio" id="estilo-informal" name="estilo" value="informal" class="form-control" />
+                            </div>
+
+
+                            <div class="form-group">
+                                <button type="button" class="btn btn-primary" data-toggle="popover" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?">Enviar datos <i class="fas fa-save"></i></button>
+                            </div>
+                        </form>
+                    </div>
                 </article>
             </section>
 
-            <section>
-                <h2>CSS</h2>
-            </section>
 
-            <section>
-                <h2>JavaScript</h2>
-            </section>
         </main>
 
-        <aside class="col-12 d-print-none">
-            <h2>Extras interesantes</h2>
-            <nav>
-                <ul>
-                    <li><a href="extras1">Extras 1</a></li>
-                    <li><a href="extras2">Extras 2</a></li>
-                    <li><a href="extras3">Extras 3</a></li>
-                    <li><a href="extras4">Extras 4</a></li>
-                    <li><a href="extras5">Extras 5</a></li>
-                    <li><a href="extras6">Extras 6</a></li>
-                </ul>
-            </nav>
-        </aside>
 
-        <footer class="col-12 d-print-none">
-            &copy; 2019 Javier Lete &#128512;
+
+        <footer class="footer" id="footer">
+            <div id="datoscontacto">
+                <h2>Contacto</h2>
+                <h4>Información de contacto:</h4>
+                <p>Dirección: Cubillo, 4 BAJO, 24420, Fabero (LEON)</p>
+                <p>Teléfono: 987550643</p>
+                <p>Email: pepe.pan@gmail.com</p>
+            </div>
+            <div id="social">
+                <h2>Redes sociales</h2>
+                <ul>
+                    <li><a href="http://facebook.com/"><i class="fa fa-facebook-square" style="font-size:48px"></i></a></li>
+                    <li><a href="http://linkedin.com/"><i class="fa fa-instagram" style="font-size:48px"></i></a></li>
+                    <li><a href="http://twitter.com/"><i class="fa fa-twitter" style="font-size:48px"></i></a></li>
+                </ul>
+                
+            </div>
+            <div id="legal">
+                <h2>Aviso legal</h2>
+                    <ul>
+                        <li><a href="#terminos">Términos y condiciones de uso</a></li>
+                        <li><a href="#privacidad">Política de privacidad</a></li>
+                        <li><a href="cookies">Política de cookies</a></li>
+                    </ul>
+            </div>
         </footer>
 
     </div>
