@@ -11,11 +11,12 @@
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/font-awesome.css">
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
-    
+
     <link rel="stylesheet" href="css/fontawesome.all.min.css" />
-    
+
     <link rel="stylesheet" href="css/index.css" />
     <link rel="stylesheet" href="css/print.css" media="print" />
+    <script src="js/index.js"></script>
 
     <title>Panaderia Pepe</title>
 </head>
@@ -48,18 +49,10 @@
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mr-auto">
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Quienes Somos
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="#pepe">Pepe</a>
-                                <a class="dropdown-item" href="#manolo">Manolo</a>
-                                <a class="dropdown-item" href="#maria">María</a>
-                                <a class="dropdown-item" href="#nieves">Nieves</a>
-                            </div>
+                        <li class="nav-item"> <a class="nav-link" href="#quienes">Quienes somos</a>
+
                         </li>
-                        
+
 
                         <li class="nav-item"> <a class="nav-link" href="#servicios">Servicios</a>
 
@@ -82,36 +75,30 @@
                 </div>
             </nav>
         </header>
-        <div class="col-12 d-print-none alert alert-info alert-dismissible fade show" role="alert">
-            Bienvenidos a esta demostración de Bootstrap
-            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-            </button>
-        </div>
+        
+    <main class="col-12">
+        <section class="row">
 
-        <main class="col-12">
-            <section class="row">
-
-                <article id="quienes" name="quienes" class="quienes">
-                    <h2>Quienes Somos</h2>
-                    <h3>Historia</h3>
-                    <p>La historia del pan en la alimentación se desarrolla paralela a la historia del uso de los
-                        cereales por parte del ser humano. El pan es un producto directo del procesado
-                        manual de los cereales (procesado que con posterioridad se transformó en mecánico)
-                        y es muy posible que fuese la primera aplicación alimenticia de estos. El pan, el aceite
-                        y el vino quizás fueron los primeros alimentos procesados en la historia de la
-                        humanidad.</p>
-                    <p>Los cereales, por sí solos, no pueden ser digeridos adecuadamente por el aparato
-                        digestivo humano. Esta es la razón por la que los cereales son artificialmente
-                        procesados (molidos, remojados, etc.) y solo a partir de este momento empezaron a
-                        convertirse en alimentos básicos para el hombre, aportando carbohidratos, los cuales
-                        se complementarían con las proteínas procedentes de las carnes.</p>
-                    <p>Así pues, el pan primigenio (elaborado con especies antiguas de cebada) pudo haber
-                        sido uno de los primeros alimentos elaborados de la historia de la alimentación.
-                        Algunos trabajos de investigación afirman que el ser humano empezó a cocinar los
-                        cereales antes que a elaborar el pan.</p>
-                    <h3>Equipo</h3>
-                    <div id="tarjetero" class="card-group">
+            <article id="quienes" name="quienes" class="page">
+                <h2>Quienes Somos</h2>
+                <h3>Historia</h3>
+                <p>La historia del pan en la alimentación se desarrolla paralela a la historia del uso de los
+                    cereales por parte del ser humano. El pan es un producto directo del procesado
+                    manual de los cereales (procesado que con posterioridad se transformó en mecánico)
+                    y es muy posible que fuese la primera aplicación alimenticia de estos. El pan, el aceite
+                    y el vino quizás fueron los primeros alimentos procesados en la historia de la
+                    humanidad.</p>
+                <p>Los cereales, por sí solos, no pueden ser digeridos adecuadamente por el aparato
+                    digestivo humano. Esta es la razón por la que los cereales son artificialmente
+                    procesados (molidos, remojados, etc.) y solo a partir de este momento empezaron a
+                    convertirse en alimentos básicos para el hombre, aportando carbohidratos, los cuales
+                    se complementarían con las proteínas procedentes de las carnes.</p>
+                <p>Así pues, el pan primigenio (elaborado con especies antiguas de cebada) pudo haber
+                    sido uno de los primeros alimentos elaborados de la historia de la alimentación.
+                    Algunos trabajos de investigación afirman que el ser humano empezó a cocinar los
+                    cereales antes que a elaborar el pan.</p>
+                <h3>Equipo</h3>
+                <div id="tarjetero" class="card-group">
                     <div class="card" style="width: 18rem;" id="pepe">
                         <img class="card-img-top" src="imgs/pepe.jpeg" alt="Card image cap">
                         <div class="card-body">
@@ -143,421 +130,441 @@
                             <h6>Cargo: Pastelera</h6>
                             <p class="card-text">Nieves es la pastelera del negocio. Domina el arte de la repostería, especialmente las tartas.</p>
                         </div>
-                        </div>
                     </div>
+                </div>
 
-                </article>
+            </article>
 
-                <article id="servicios">
-                    <h2>Servicios</h2>
-                    <h4>Introducción a los servicios:</h4>
-                    <p>Le ofrecemos un trato experto con ideas personalizadas para usted, las propuestas de
-                        catering más innovadoras servidas con la calidad de siempre a empresas y
-                        particulares</p>
-                    <p>Realizamos y asesoramos todo tipo de eventos, fiestas o celebraciones. Disfrutamos
-                        innovando en la cocina y le damos vital importancia a la materia prima y a la rigurosa
-                        elaboración de nuestros productos.</p>
+            <article id="servicios" class="page">
+                <h2>Servicios</h2>
+                <h4>Introducción a los servicios:</h4>
+                <p>Le ofrecemos un trato experto con ideas personalizadas para usted, las propuestas de
+                    catering más innovadoras servidas con la calidad de siempre a empresas y
+                    particulares</p>
+                <p>Realizamos y asesoramos todo tipo de eventos, fiestas o celebraciones. Disfrutamos
+                    innovando en la cocina y le damos vital importancia a la materia prima y a la rigurosa
+                    elaboración de nuestros productos.</p>
 
 
+                <div>
+                    <h4>Los servicios que ofrecemos son:</h4>
+                    <ul>
+                        <li><a href="#despacho">Despacho en tienda</a></li>
+                        <li><a href="#domicilio">Servicio a domicilio</a></li>
+                        <li><a href="#catering">Catering</a></li>
+                    </ul>
                     <div>
-                        <h4>Los servicios que ofrecemos son:</h4>
-                        <ul>
-                            <li><a href="#despacho">Despacho en tienda</a></li>
-                            <li><a href="#domicilio">Servicio a domicilio</a></li>
-                            <li><a href="#catering">Catering</a></li>
-                        </ul>
-                        <div>
-                            <div id="despacho">
-                                <h3>Despacho en tienda</h3>
-                                <img src="imgs/despacho.jpg">
-                                <p>Ponemos emoción en cada plato para que su experiencia sea única. Déjese seducir
-                                    por nuestras propuestas gastronómicas que aúnan tradición y modernidad.</p>
-                                <p>Nuestro equipo de profesionales elabora recetas con productos de primerísima calidad
-                                    para satisfacer las necesidades de nuestros clientes con el máximo rigor y entusiasmo.</p>
-                            </div>
-                            <div id="domicilio">
-                                <h3>Servicio a domicilio</h3>
-                                <img src="imgs/domicilio.png">
-                                <p>Directo a su oficina. Le proponemos un servicio perfecto para desayunos y almuerzos
-                                    de negocios. Escoja entre una amplia selección de productos nutritivos, deliciosos y
-                                    listos para ser degustados. Tómese un respiro, nosotros nos encargamos de todo.</p>
-                            </div>
-                            <div id="catering">
-                                <h3>Catering</h3>
-                                <img src="imgs/catering.jpg">
-                                <p>Confíe en nosotros para organizar una gran velada. Confíe en nuestra larga
-                                    experiencia, flexibilidad para adaptarnos a cualquier espacio, calidad e innovación.
-                                    Deje en nuestras manos una puesta en escena perfecta y un servicio impecable.
-                                    Somos especialistas en agasajar a sus invitados con un trato personal y único.</p>
-                            </div>
+                        <div id="despacho">
+                            <h3>Despacho en tienda</h3>
+                            <img src="imgs/despacho.jpg">
+                            <p>Ponemos emoción en cada plato para que su experiencia sea única. Déjese seducir
+                                por nuestras propuestas gastronómicas que aúnan tradición y modernidad.</p>
+                            <p>Nuestro equipo de profesionales elabora recetas con productos de primerísima calidad
+                                para satisfacer las necesidades de nuestros clientes con el máximo rigor y entusiasmo.</p>
+                        </div>
+                        <div id="domicilio">
+                            <h3>Servicio a domicilio</h3>
+                            <img src="imgs/domicilio.png">
+                            <p>Directo a su oficina. Le proponemos un servicio perfecto para desayunos y almuerzos
+                                de negocios. Escoja entre una amplia selección de productos nutritivos, deliciosos y
+                                listos para ser degustados. Tómese un respiro, nosotros nos encargamos de todo.</p>
+                        </div>
+                        <div id="catering">
+                            <h3>Catering</h3>
+                            <img src="imgs/catering.jpg">
+                            <p>Confíe en nosotros para organizar una gran velada. Confíe en nuestra larga
+                                experiencia, flexibilidad para adaptarnos a cualquier espacio, calidad e innovación.
+                                Deje en nuestras manos una puesta en escena perfecta y un servicio impecable.
+                                Somos especialistas en agasajar a sus invitados con un trato personal y único.</p>
                         </div>
                     </div>
+                </div>
 
 
-                </article>
+            </article>
 
-                <article id="productos">
-                    <h2>Productos</h2>
-                    <p>Con la búsqueda de las mejores materias primas empezamos nuestro viaje, para
-                        nosotros es tan importante el destino como los medios para alcanzarlo, por eso solo
-                        adquirimos productos respetuosos con el medio ambiente.</p>
-                    <p>Combinando tradición e innovación aparecen nuestras recetas especiales. Las
-                        mejores materias primas y el amor por nuestro trabajo son el secreto de nuestros
-                        panes especiales: buenos ingredientes y paciencia.</p>
-                    <p>Nuestros panes creativos son el fruto de nuestra apuesta por la innovación y la fusión
-                        de sabores. Creemos que el pan aún puede sorprenderte sin necesidad de perder su
-                        esencia: un alimento sabroso y saludable para todos los días.</p>
-                    <h3>Lista de productos</h3>
-                    <div class="table-responsive shadow">
-                        <table class="table table-striped table-bordered table-hover table-sm" id="tablaproductos">
-                            <thead class="thead-dark">
-                                <tr>
-                                    <th>Codigo</th>
-                                    <th>Descripción</th>
-                                    <th>Imagen del producto</th>
-                                    <th>Ingredientes</th>
-                                    <th>Valos nutricional</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>1501104</td>
-                                    <td>Baguette</td>
-                                    <td><img src="imgs/baguette.png"></td>
-                                    <td rowspan="5" align="center">
-                                        <p>Harina de TRIGO, agua, sal, levadura, antialomerante E-170, emulgente; lecitina de SOJA, E-472e y E-491, antioxidante E-300, enzimas, agente de tratamiento de la harina E-920</p><br><strong><u>CONTIENE GLUTEN DE TRIGO Y SOJA</u></strong>
-                                    </td>
-                                    <td rowspan="5">VALOR ENERGETICO:<br>266 kcal/100g - 1.127,84 kj/100g<br><br>GRASAS</td>
-                                </tr>
-                                <tr>
-                                    <td>1501105</td>
-                                    <td>Baguette súper</td>
-                                    <td><img src="imgs/baguette-super.png"></td>
-                                </tr>
-                                <tr>
-                                    <td>1501103</td>
-                                    <td>Barra 350</td>
-                                    <td><img src="imgs/barra350.png"></td>
-                                </tr>
-                                <tr>
-                                    <td>1513124</td>
-                                    <td>Flauta artesana</td>
-                                    <td><img src="imgs/flauta.png"></td>
-                                </tr>
-                                <tr>
-                                    <td>1508105</td>
-                                    <td>Pan cuadrado súper</td>
-                                    <td><img src="imgs/cuadrado.png"></td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <div class="table-responsive shadow">
-                        <table class="table table-striped table-bordered table-hover table-sm" id="tablaproductossin">
-                            <thead class="thead-dark">
-                                <tr>
-                                    <th>Codigo</th>
-                                    <th>Descripción</th>
-                                    <th>Imagen del producto</th>
-                                    <th>Ingredientes</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>1215004</td>
-                                    <td>Caña de chocolate</td>
-                                    <td><img src="imgs/ca%C3%B1a.png"></td>
-                                    <td>
-                                        <p>Harina de TRIGO, margarina (grasas y aceites vegetañes, agua, emulgente (mono y digliceridos de ácidos grasos), acidulante (ácido citrico9, conservante (sorbato potasico), aroma, colorante (betacaroteno)), sal, agua, chocolate (azucar, aceite vegetal, cacao en polvo desgrasado, almidón modificado, grasa vegetal hidrogenada, emulgente y aroma, cobertura chocolate (azucar, grasa vegetal hidrogenada, polvo de cacao desgrasado (27%), emulgentes (lecitina de SOJA, E492) y aroma (vainillina), HUEVO pasteurizado.</p>
-                                        <br>
-                                        <br>
-                                        <strong><u>CONTIENE GLUTEN DE TRIGO, SOJA Y HUEVO</u></strong>
-                                </tr>
-                                <tr>
-                                    <td>1215009</td>
-                                    <td>Palmera</td>
-                                    <td><img src="imgs/palmera.png"></td>
-                                    <td>
-                                        <p>Harina de TRIGO, margarina (grasas y aceites vegetales, agua, emulgente (mono y diglicéridos de ácidos grasos), acidulante (ácido cítrico), conservantes (sorbato potásico), aroma, colorante (betacaroteno)), azucar invertido (30% sacarosa y agua), sal, agua, colorante E-102, azucar.</p>
-                                        <br>
-                                        <br>
-                                        <strong><u>CONTIENE GLUTEN DE TRIGO</u></strong>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>1215010</td>
-                                    <td>Palmera de chocolate</td>
-                                    <td><img src="imgs/palmerachocolate.png"></td>
-                                    <td>
-                                        <p>Harina de TRIGO, margarina (grasas y aceites vegetales, agua, emulgente (mono y digliceridos de acidos grasos), acidulante (acido citrico), conservante (sorbato potasico), aroma, colorante (betacaroteno)), azucar inverido (30%) sacarosa y agua), sal, agua, colorante E-102, E-110, azucar, cobertura chocolate (azucar, grasa y vegetal hidrogenada, polvo de cacao desgrasado(27%), emulgentes (lecitina de SOJA, E492) y aroma (vainillina).</p>
-                                        <br>
-                                        <br>
-                                        <strong><u>CONTIENE GLUTEN DE TRIGO Y SOJA</u></strong>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>1217001</td>
-                                    <td>Croissant</td>
-                                    <td><img src="imgs/croissant.png"></td>
-                                    <td>
-                                        <p>Harina de TRIGO, manteca de cerdo (sain de cerdo, estabilizante E471, antioxidantes, lecitina de SOJA, E321), agua, azucar, mejorante (GLUTEN, emulgente E472e, dextrosa, antioxidante E-320, aceite vegetal y enzimas), levadura, HUEVO pasteurizado, sal.</p>
-                                        <br>
-                                        <br>
-                                        <strong><u>CONTIENE GLUTEN DE TRIGO, SOJA Y HUEVO</u></strong>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <h3>Conservación de los productos</h3>
-                    <div class="table-responsive shadow">
-                        <table class="table table-striped table-bordered table-hover table-sm" id="tablaconservacion">
-                            <thead class="thead-dark">
-                                <tr align="center">
-                                    <th>Producto</th>
-                                    <th>Temperatura de almacenamiento (Cº)</th>
-                                    <th>Vida útil</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Pan molde</td>
-                                    <td align="center">Ambiente</td>
-                                    <td>2-3 meses</td>
-                                </tr>
-                                <tr>
-                                    <td>Pan precocido</td>
-                                    <td align="center">Ambiente</td>
-                                    <td>1-2 meses</td>
-                                </tr>
-                                <tr>
-                                    <td>Bizcochos</td>
-                                    <td align="center">Ambiente</td>
-                                    <td>3-4 meses</td>
-                                </tr>
-                                <tr>
-                                    <td>Brioches</td>
-                                    <td align="center">Ambiente</td>
-                                    <td>2-3 meses</td>
-                                </tr>
-                                <tr>
-                                    <td>Magdalenas</td>
-                                    <td align="center">Ambiente</td>
-                                    <td>
-                                        2-3 meses
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>Croissants</td>
-                                    <td align="center">Ambiente</td>
-                                    <td>15-25 dias</td>
-                                </tr>
-                                <tr>
-                                    <td>Hojaldres</td>
-                                    <td align="center">Ambiente</td>
-                                    <td>45 días</td>
-                                </tr>
-                                <tr>
-                                    <td>Crepes</td>
-                                    <td align="center">Ambiente</td>
-                                    <td>1-2 meses</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </article>
-                <article id="noticias">
-                    <div id="cabecera-noticias">
-                        <h2>Noticias</h2>
-                        <br>
-                        <h4> Nuevo servicio a domicilio ya disponible</h4>
+            <article id="productos" class="page">
+                <h2>Productos</h2>
+                <p>Con la búsqueda de las mejores materias primas empezamos nuestro viaje, para
+                    nosotros es tan importante el destino como los medios para alcanzarlo, por eso solo
+                    adquirimos productos respetuosos con el medio ambiente.</p>
+                <p>Combinando tradición e innovación aparecen nuestras recetas especiales. Las
+                    mejores materias primas y el amor por nuestro trabajo son el secreto de nuestros
+                    panes especiales: buenos ingredientes y paciencia.</p>
+                <p>Nuestros panes creativos son el fruto de nuestra apuesta por la innovación y la fusión
+                    de sabores. Creemos que el pan aún puede sorprenderte sin necesidad de perder su
+                    esencia: un alimento sabroso y saludable para todos los días.</p>
+                <h3>Lista de productos</h3>
+                <div class="table-responsive shadow">
+                    <table class="table table-striped table-bordered table-hover table-sm rounded" id="tablaproductos">
+                        <thead class="thead-dark">
+                            <tr>
+                                <th>Codigo</th>
+                                <th>Descripción</th>
+                                <th>Imagen del producto</th>
+                                <th>Ingredientes</th>
+                                <th>Valos nutricional</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1501104</td>
+                                <td>Baguette</td>
+                                <td><img src="imgs/baguette.png"></td>
+                                <td rowspan="5" align="center">
+                                    <p>Harina de TRIGO, agua, sal, levadura, antialomerante E-170, emulgente; lecitina de SOJA, E-472e y E-491, antioxidante E-300, enzimas, agente de tratamiento de la harina E-920</p><br><strong><u>CONTIENE GLUTEN DE TRIGO Y SOJA</u></strong>
+                                </td>
+                                <td rowspan="5">VALOR ENERGETICO:<br>266 kcal/100g - 1.127,84 kj/100g<br><br>GRASAS</td>
+                            </tr>
+                            <tr>
+                                <td>1501105</td>
+                                <td>Baguette súper</td>
+                                <td><img src="imgs/baguette-super.png"></td>
+                            </tr>
+                            <tr>
+                                <td>1501103</td>
+                                <td>Barra 350</td>
+                                <td><img src="imgs/barra350.png"></td>
+                            </tr>
+                            <tr>
+                                <td>1513124</td>
+                                <td>Flauta artesana</td>
+                                <td><img src="imgs/flauta.png"></td>
+                            </tr>
+                            <tr>
+                                <td>1508105</td>
+                                <td>Pan cuadrado súper</td>
+                                <td><img src="imgs/cuadrado.png"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="table-responsive shadow">
+                    <table class="table table-striped table-bordered table-hover table-sm rounded" id="tablaproductossin">
+                        <thead class="thead-dark">
+                            <tr>
+                                <th>Codigo</th>
+                                <th>Descripción</th>
+                                <th>Imagen del producto</th>
+                                <th>Ingredientes</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1215004</td>
+                                <td>Caña de chocolate</td>
+                                <td><img src="imgs/ca%C3%B1a.png"></td>
+                                <td>
+                                    <p>Harina de TRIGO, margarina (grasas y aceites vegetañes, agua, emulgente (mono y digliceridos de ácidos grasos), acidulante (ácido citrico9, conservante (sorbato potasico), aroma, colorante (betacaroteno)), sal, agua, chocolate (azucar, aceite vegetal, cacao en polvo desgrasado, almidón modificado, grasa vegetal hidrogenada, emulgente y aroma, cobertura chocolate (azucar, grasa vegetal hidrogenada, polvo de cacao desgrasado (27%), emulgentes (lecitina de SOJA, E492) y aroma (vainillina), HUEVO pasteurizado.</p>
+                                    <br>
+                                    <br>
+                                    <strong><u>CONTIENE GLUTEN DE TRIGO, SOJA Y HUEVO</u></strong>
+                            </tr>
+                            <tr>
+                                <td>1215009</td>
+                                <td>Palmera</td>
+                                <td><img src="imgs/palmera.png"></td>
+                                <td>
+                                    <p>Harina de TRIGO, margarina (grasas y aceites vegetales, agua, emulgente (mono y diglicéridos de ácidos grasos), acidulante (ácido cítrico), conservantes (sorbato potásico), aroma, colorante (betacaroteno)), azucar invertido (30% sacarosa y agua), sal, agua, colorante E-102, azucar.</p>
+                                    <br>
+                                    <br>
+                                    <strong><u>CONTIENE GLUTEN DE TRIGO</u></strong>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>1215010</td>
+                                <td>Palmera de chocolate</td>
+                                <td><img src="imgs/palmerachocolate.png"></td>
+                                <td>
+                                    <p>Harina de TRIGO, margarina (grasas y aceites vegetales, agua, emulgente (mono y digliceridos de acidos grasos), acidulante (acido citrico), conservante (sorbato potasico), aroma, colorante (betacaroteno)), azucar inverido (30%) sacarosa y agua), sal, agua, colorante E-102, E-110, azucar, cobertura chocolate (azucar, grasa y vegetal hidrogenada, polvo de cacao desgrasado(27%), emulgentes (lecitina de SOJA, E492) y aroma (vainillina).</p>
+                                    <br>
+                                    <br>
+                                    <strong><u>CONTIENE GLUTEN DE TRIGO Y SOJA</u></strong>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>1217001</td>
+                                <td>Croissant</td>
+                                <td><img src="imgs/croissant.png"></td>
+                                <td>
+                                    <p>Harina de TRIGO, manteca de cerdo (sain de cerdo, estabilizante E471, antioxidantes, lecitina de SOJA, E321), agua, azucar, mejorante (GLUTEN, emulgente E472e, dextrosa, antioxidante E-320, aceite vegetal y enzimas), levadura, HUEVO pasteurizado, sal.</p>
+                                    <br>
+                                    <br>
+                                    <strong><u>CONTIENE GLUTEN DE TRIGO, SOJA Y HUEVO</u></strong>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <h3>Conservación de los productos</h3>
+                <div class="table-responsive shadow">
+                    <table class="table table-striped table-bordered table-hover table-sm" id="tablaconservacion">
+                        <thead class="thead-dark">
+                            <tr align="center">
+                                <th>Producto</th>
+                                <th>Temperatura de almacenamiento (Cº)</th>
+                                <th>Vida útil</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Pan molde</td>
+                                <td align="center">Ambiente</td>
+                                <td>2-3 meses</td>
+                            </tr>
+                            <tr>
+                                <td>Pan precocido</td>
+                                <td align="center">Ambiente</td>
+                                <td>1-2 meses</td>
+                            </tr>
+                            <tr>
+                                <td>Bizcochos</td>
+                                <td align="center">Ambiente</td>
+                                <td>3-4 meses</td>
+                            </tr>
+                            <tr>
+                                <td>Brioches</td>
+                                <td align="center">Ambiente</td>
+                                <td>2-3 meses</td>
+                            </tr>
+                            <tr>
+                                <td>Magdalenas</td>
+                                <td align="center">Ambiente</td>
+                                <td>
+                                    2-3 meses
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Croissants</td>
+                                <td align="center">Ambiente</td>
+                                <td>15-25 dias</td>
+                            </tr>
+                            <tr>
+                                <td>Hojaldres</td>
+                                <td align="center">Ambiente</td>
+                                <td>45 días</td>
+                            </tr>
+                            <tr>
+                                <td>Crepes</td>
+                                <td align="center">Ambiente</td>
+                                <td>1-2 meses</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </article>
+            <article id="noticias" class="page">
+                <div id="cabecera-noticias">
+                    <h2>Noticias</h2>
+                    <br>
+                    <h4> Nuevo servicio a domicilio ya disponible</h4>
+                    <h5>18/01/18</h5>
+                    <img src="imgs/serviciodomicilio.jpg">
+                    <p>Sois muchos los que lo pediais, y por fin ya es posible...</p>
+                    <a href="#noticiadomicilio">Leer más</a>
+                    <h4>Reserva ya tu roscón de reyes</h4>
+                    <h5>04/01/18</h5>
+                    <img src="imgs/roscon.jpeg">
+                    <p>Tras Navidad y Nochevieja, llega Reyes…</p>
+                    <a href="#noticiaroscon">Leer más</a>
+                    <h4>Ofertas especiales en polvorones y mantecados</h4>
+                    <h5>29/12/17</h5>
+                    <img src="imgs/polvorones.jpeg">
+                    <p>Tan tradicional en estas fechas como el Belén, las 12 uvas o el espumillón es una bandeja de polvorones...</p>
+                    <a href="#noticiapolvorones">Leer más</a>
+                </div>
+                <div id="noticias-completas">
+                    <div id="noticiadomicilio">
+                        <h4>Nuevo servicio a domicilio ya disponible</h4>
                         <h5>18/01/18</h5>
                         <img src="imgs/serviciodomicilio.jpg">
-                        <p>Sois muchos los que lo pediais, y por fin ya es posible...</p>
-                        <a href="#noticiadomicilio">Leer más</a>
+                        <p>Sois muchos los que lo pediais, y por fin ya es posible.</p>
+                        <p>Ya puedes disfrutar de nuestra comida en tu casa, la oficina o donde quieras. Con el
+                            servicio de JustEat.es puedes pedir online tus platos preferidos y te los llevamos a
+                            casa recién hechos.</p>
+                        <p>Es muy sencillo, simplemente entrando en <a href="https://www.just-eat.es/" target="_blank">www.just-eat.es</a> o descargando su app,
+                            podrás acceder a nuestra carta, seleccionar tus platos y lo enviamos a la dirección que
+                            desees. Y por supuesto puedes pagar con tarjeta o en efectivo.
+                        </p>
+                        <p>Ya sabes, no cocines y disfruta de nuestros productos en tu casa.</p>
+                    </div>
+                    <div id="noticiaroscon">
                         <h4>Reserva ya tu roscón de reyes</h4>
                         <h5>04/01/18</h5>
                         <img src="imgs/roscon.jpeg">
-                        <p>Tras Navidad y Nochevieja, llega Reyes…</p>
-                        <a href="#noticiaroscon">Leer más</a>
+                        <p>Tras Navidad y Nochevieja, llega Reyes… La noche más mágica del año. Una noche,
+                            y un día, lleno de ilusión, de nervios, de niños nerviosos por la llegada de sus
+                            Majestades los Reyes Magos…. y por el tradicional Roscón de Reyes.</p>
+                        <p>Un roscón artesano elaborado utilizando materias primas de primera calidad, frutas,
+                            agua de azahar… que podéis encargar ya en nuestra panadería. </p>
+                        <p>Tenemos dos tamaños, uno pequeño, de 4 a 6 raciones por 9 euros, y otro grande, de
+                            12 a 15 raciones, por 20 euros ¡No te descuides, celebra el día de Reyes con nosotros
+                            y reserva ya tu roscón artesano en nuestras tiendas! </p>
+                    </div>
+                    <div id="noticiapolvorones">
                         <h4>Ofertas especiales en polvorones y mantecados</h4>
                         <h5>29/12/17</h5>
                         <img src="imgs/polvorones.jpeg">
-                        <p>Tan tradicional en estas fechas como el Belén, las 12 uvas o el espumillón es una bandeja de polvorones...</p>
-                        <a href="#noticiapolvorones">Leer más</a>
+                        <p>Tan tradicional en estas fechas como el Belén, las 12 uvas o el espumillón es una
+                            bandeja de polvorones. Envueltos en papel de seda con doble nudo, nos evocan a
+                            épocas pasadas y son pocos los que se resisten a probarlos.</p>
+                        <p>Su origen se remonta al siglo XVI en Andalucía -Estepa, en Sevilla, y Antequera, en
+                            Málaga, se disputan su autoría-, donde se empezaron a elaborar pequeñas tortas
+                            aprovechando el excedente de trigo y manteca de cerdo. La receta evolucionó cuando
+                            en el siglo XIX una estepeña, Micaela Ruiz Téllez, conocida como La Colchona,
+                            mejoró el proceso de elaboración, "ya que refinaba la harina, la tostaba y conseguía un
+                            producto más suave", aseguran desde el Consejo Regulador de mantecados y
+                            polvorones de Estepa. Con el secado de la harina, el dulce adquiría esa característica
+                            corteza dura y un interior mucho más tierno, aumentando así también su fecha de
+                            caducidad.</p>
+                        <p>
+                            Aunque mantecado y polvorón se parecen en forma, sabor y textura -dulces ovalados
+                            de unos 35 gramos hechos a base de harina de trigo, azúcar molida y manteca de
+                            cerdo- tienen características que los diferencian. "El mantecado lleva canela y suele
+                            estar decorado con ajonjolí (semillas de sésamo) en la parte superior", explica Eusebio
+                            Olmedo, presidente del Consejo Regulador de mantecados y polvorones de Estepa.
+                            Además, éste tiene una textura más mantecosa y compacta y permite la incorporación
+                            de otros ingredientes como avellana, coco, cacao... Por su parte, "el polvorón está
+                            coronado con azúcar glas y lleva trozos de almendra tostada en su interior", afirma
+                            Olmedo. También es más arenoso y se desmigaja con más facilidad por su mayor
+                            contenido en harina, y se reconoce por esa corteza dura que inició La Colchona. "Para
+                            elaborarlos, primero se introduce la manteca en la amasadora, a continuación el
+                            azúcar glas, los ingredientes específicos de cada variedad y por último la harina. Una
+                            vez que la masa queda homogénea, se forman las piezas, se hornean (unos 12 ó 15
+                            minutos) y se dejan enfriar», explican desde el Consejo Regulador de Estepa. Algunas
+                            marcas, como La Chinata, sustituyen la manteca de cerdo de sus polvorones por
+                            aceite de oliva virgen extra, más saludable.
+                        </p>
+                        <p>Desde hace 150 años, la localidad sevillana de Estepa se ha convertido en el
+                            estandarte de los polvorones en España. Tanto es así que cuenta con una certificación
+                            europea de Indicación Geográfica Protegida, lo que "garantiza el cumplimiento de
+                            unos requisitos superiores a los exigidos", explica su Consejo Regulador. Este año,
+                            desde la localidad sevillana se han producido 22.000 toneladas para exportarlas al
+                            resto de regiones españolas. El favorito sigue siendo el polvorón de almendras,
+                            aunque Olmedo recalca que depende de la zona. "Éste es más demandado en el
+                            norte, mientras que en el sur se prefiere más el mantecado". </p>
+                        <p>
+                            Antequera también destaca por su calidad, aunque su comercialización es más
+                            discreta. A pesar de que en el sur radica su origen, la tradición se ha extendido a otras
+                            zonas como Navarra o Castilla y León. Allí, la familia de Ana Pascual lleva cinco
+                            generaciones elaborando los famosos polvorones El Toro, en Tordesillas (Valladolid).
+                            Pero si hay unos que destacan, avalados por los numerosos galardones que han
+                            recibido tanto a nivel nacional como internacional, son los mantecados Felipe II, que
+                            se elaboran en Vitoria y cuya caja de 520 gramos alcanza los 21 euros. La diferencia
+                            de precio se hace patente si lo comparamos con el de otros productos que se
+                            encuentran en el mercado: polvorones que cuestan entre 12 y 8 euros el kilo e incluso
+                            otros que descienden hasta 4 euros el kilo. En este sector, como en otros muchos, la
+                            calidad se paga.
+                        </p>
                     </div>
-                    <div id="noticias-completas">
-                        <div id="noticiadomicilio">
-                            <h4>Nuevo servicio a domicilio ya disponible</h4>
-                            <h5>18/01/18</h5>
-                            <img src="imgs/serviciodomicilio.jpg">
-                            <p>Sois muchos los que lo pediais, y por fin ya es posible.</p>
-                            <p>Ya puedes disfrutar de nuestra comida en tu casa, la oficina o donde quieras. Con el
-                                servicio de JustEat.es puedes pedir online tus platos preferidos y te los llevamos a
-                                casa recién hechos.</p>
-                            <p>Es muy sencillo, simplemente entrando en <a href="https://www.just-eat.es/" target="_blank">www.just-eat.es</a> o descargando su app,
-                                podrás acceder a nuestra carta, seleccionar tus platos y lo enviamos a la dirección que
-                                desees. Y por supuesto puedes pagar con tarjeta o en efectivo.
-                            </p>
-                            <p>Ya sabes, no cocines y disfruta de nuestros productos en tu casa.</p>
-                        </div>
-                        <div id="noticiaroscon">
-                            <h4>Reserva ya tu roscón de reyes</h4>
-                            <h5>04/01/18</h5>
-                            <img src="imgs/roscon.jpeg">
-                            <p>Tras Navidad y Nochevieja, llega Reyes… La noche más mágica del año. Una noche,
-                                y un día, lleno de ilusión, de nervios, de niños nerviosos por la llegada de sus
-                                Majestades los Reyes Magos…. y por el tradicional Roscón de Reyes.</p>
-                            <p>Un roscón artesano elaborado utilizando materias primas de primera calidad, frutas,
-                                agua de azahar… que podéis encargar ya en nuestra panadería. </p>
-                            <p>Tenemos dos tamaños, uno pequeño, de 4 a 6 raciones por 9 euros, y otro grande, de
-                                12 a 15 raciones, por 20 euros ¡No te descuides, celebra el día de Reyes con nosotros
-                                y reserva ya tu roscón artesano en nuestras tiendas! </p>
-                        </div>
-                        <div id="noticiapolvorones">
-                            <h4>Ofertas especiales en polvorones y mantecados</h4>
-                            <h5>29/12/17</h5>
-                            <img src="imgs/polvorones.jpeg">
-                            <p>Tan tradicional en estas fechas como el Belén, las 12 uvas o el espumillón es una
-                                bandeja de polvorones. Envueltos en papel de seda con doble nudo, nos evocan a
-                                épocas pasadas y son pocos los que se resisten a probarlos.</p>
-                            <p>Su origen se remonta al siglo XVI en Andalucía -Estepa, en Sevilla, y Antequera, en
-                                Málaga, se disputan su autoría-, donde se empezaron a elaborar pequeñas tortas
-                                aprovechando el excedente de trigo y manteca de cerdo. La receta evolucionó cuando
-                                en el siglo XIX una estepeña, Micaela Ruiz Téllez, conocida como La Colchona,
-                                mejoró el proceso de elaboración, "ya que refinaba la harina, la tostaba y conseguía un
-                                producto más suave", aseguran desde el Consejo Regulador de mantecados y
-                                polvorones de Estepa. Con el secado de la harina, el dulce adquiría esa característica
-                                corteza dura y un interior mucho más tierno, aumentando así también su fecha de
-                                caducidad.</p>
-                            <p>
-                                Aunque mantecado y polvorón se parecen en forma, sabor y textura -dulces ovalados
-                                de unos 35 gramos hechos a base de harina de trigo, azúcar molida y manteca de
-                                cerdo- tienen características que los diferencian. "El mantecado lleva canela y suele
-                                estar decorado con ajonjolí (semillas de sésamo) en la parte superior", explica Eusebio
-                                Olmedo, presidente del Consejo Regulador de mantecados y polvorones de Estepa.
-                                Además, éste tiene una textura más mantecosa y compacta y permite la incorporación
-                                de otros ingredientes como avellana, coco, cacao... Por su parte, "el polvorón está
-                                coronado con azúcar glas y lleva trozos de almendra tostada en su interior", afirma
-                                Olmedo. También es más arenoso y se desmigaja con más facilidad por su mayor
-                                contenido en harina, y se reconoce por esa corteza dura que inició La Colchona. "Para
-                                elaborarlos, primero se introduce la manteca en la amasadora, a continuación el
-                                azúcar glas, los ingredientes específicos de cada variedad y por último la harina. Una
-                                vez que la masa queda homogénea, se forman las piezas, se hornean (unos 12 ó 15
-                                minutos) y se dejan enfriar», explican desde el Consejo Regulador de Estepa. Algunas
-                                marcas, como La Chinata, sustituyen la manteca de cerdo de sus polvorones por
-                                aceite de oliva virgen extra, más saludable.
-                            </p>
-                            <p>Desde hace 150 años, la localidad sevillana de Estepa se ha convertido en el
-                                estandarte de los polvorones en España. Tanto es así que cuenta con una certificación
-                                europea de Indicación Geográfica Protegida, lo que "garantiza el cumplimiento de
-                                unos requisitos superiores a los exigidos", explica su Consejo Regulador. Este año,
-                                desde la localidad sevillana se han producido 22.000 toneladas para exportarlas al
-                                resto de regiones españolas. El favorito sigue siendo el polvorón de almendras,
-                                aunque Olmedo recalca que depende de la zona. "Éste es más demandado en el
-                                norte, mientras que en el sur se prefiere más el mantecado". </p>
-                            <p>
-                                Antequera también destaca por su calidad, aunque su comercialización es más
-                                discreta. A pesar de que en el sur radica su origen, la tradición se ha extendido a otras
-                                zonas como Navarra o Castilla y León. Allí, la familia de Ana Pascual lleva cinco
-                                generaciones elaborando los famosos polvorones El Toro, en Tordesillas (Valladolid).
-                                Pero si hay unos que destacan, avalados por los numerosos galardones que han
-                                recibido tanto a nivel nacional como internacional, son los mantecados Felipe II, que
-                                se elaboran en Vitoria y cuya caja de 520 gramos alcanza los 21 euros. La diferencia
-                                de precio se hace patente si lo comparamos con el de otros productos que se
-                                encuentran en el mercado: polvorones que cuestan entre 12 y 8 euros el kilo e incluso
-                                otros que descienden hasta 4 euros el kilo. En este sector, como en otros muchos, la
-                                calidad se paga.
-                            </p>
-                        </div>
-                    </div>
-                </article>
-                <article id="contacto">
-                    <h2>Contacto</h2>
-                    <h4>Información de contacto:</h4>
-                    <p>Dirección: Cubillo, 4 BAJO, 24420, Fabero (LEON)</p>
-                    <p>Teléfono: 987550643</p>
-                    <p>Email: pepe.pan@gmail.com</p>
-
-                    <div id="formularios">
-                        <h4>Formulario</h4>
-
-                        <form action="#" method="get">
-                            <div class="form-group">
-                                <label for="nombre">Nombre y apellidos</label>
-                                <input id="nombre" name="nombre" placeholder="Pon tu nombre y apellidos" class="form-control" />
-                            </div>
-                            <div class="form-group">
-                                <label for="email">Email</label>
-                                <div class="input-group mb-3">
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text" id="basic-addon1">@</span>
-                                    </div>
-                                    <input type="email" id="email" name="email" placeholder="Email personal" class="form-control" />
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="telefono">Teléfono</label>
-                                <input type="tel" id="telefono" name="telefono" placeholder="Teléfono de contacto" class="form-control" />
-                            </div>
-                            <div class="form-group">
-                                <label for="exampleFormControlSelect1">Departamento al que se dirige</label>
-                                <select class="form-control" id="exampleFormControlSelect1">
-                                    <option>Atención al cliente</option>
-                                    <option>Recursos humanos</option>
-                                    <option>Marketing</option>
-                                    <option>Otro</option>
-                                </select>
-                            </div>
-                            <div class="form-group">
-                                <label for="exampleFormControlTextarea1">Mensaje</label>
-                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                            </div>
-                            <div class="form-group">
-                                <label for="estilo-informal">Aceptar la politica de privacidad</label>
-                                <input type="radio" id="estilo-informal" name="estilo" value="informal" class="form-control" />
-                            </div>
-
-
-                            <div class="form-group">
-                                <button type="button" class="btn btn-primary" data-toggle="popover" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?">Enviar datos <i class="fas fa-save"></i></button>
-                            </div>
-                        </form>
-                    </div>
-                </article>
-            </section>
-
-
-        </main>
-
-
-
-        <footer class="footer" id="footer">
-            <div id="datoscontacto">
+                </div>
+            </article>
+            <article id="contacto" class="page">
                 <h2>Contacto</h2>
                 <h4>Información de contacto:</h4>
                 <p>Dirección: Cubillo, 4 BAJO, 24420, Fabero (LEON)</p>
                 <p>Teléfono: 987550643</p>
                 <p>Email: pepe.pan@gmail.com</p>
-            </div>
-            <div id="social">
-                <h2>Redes sociales</h2>
-                <ul>
-                    <li><a href="http://facebook.com/"><i class="fa fa-facebook-square" style="font-size:48px"></i></a></li>
-                    <li><a href="http://linkedin.com/"><i class="fa fa-instagram" style="font-size:48px"></i></a></li>
-                    <li><a href="http://twitter.com/"><i class="fa fa-twitter" style="font-size:48px"></i></a></li>
-                </ul>
+
+                <div id="formularios">
+                    <h4>Formulario</h4>
+
+                    <form action="#" method="get">
+                        <div class="form-group">
+                            <label for="nombre">Nombre y apellidos</label>
+                            <input id="nombre" name="nombre" placeholder="Pon tu nombre y apellidos" class="form-control" />
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="basic-addon1">@</span>
+                                </div>
+                                <input type="email" id="email" name="email" placeholder="Email personal" class="form-control" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="telefono">Teléfono</label>
+                            <input type="tel" id="telefono" name="telefono" placeholder="Teléfono de contacto" class="form-control" />
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlSelect1">Departamento al que se dirige</label>
+                            <select class="form-control" id="exampleFormControlSelect1">
+                                <option>Atención al cliente</option>
+                                <option>Recursos humanos</option>
+                                <option>Marketing</option>
+                                <option>Otro</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlTextarea1">Mensaje</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="estilo-informal">Aceptar la politica de privacidad</label>
+                            <input type="radio" id="estilo-informal" name="estilo" value="informal" class="form-control" />
+                        </div>
+
+
+                        <div class="form-group">
+                            <button type="button" class="btn btn-primary" data-toggle="popover" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?">Enviar datos <i class="fas fa-save"></i></button>
+                        </div>
+                    </form>
+                </div>
+            </article>
+            
+            <article id="portada" class="page default">
+            <img src="imgs/global.jpg" class="center">
+            <div id="subportada" class="row">
+                <div id="destacado">
+                    <h3>Producto del mes</h3>
                 
+                <img src="imgs/destacado.png" class="rounded float-left img-responsive">
+                <p><u>Tarta 3 chocolates</u></p>
             </div>
-            <div id="legal">
-                <h2>Aviso legal</h2>
-                    <ul>
-                        <li><a href="#terminos">Términos y condiciones de uso</a></li>
-                        <li><a href="#privacidad">Política de privacidad</a></li>
-                        <li><a href="cookies">Política de cookies</a></li>
-                    </ul>
+            <div id="news">
+                <h3>Ultimas noticias</h3>
+                <a href="#noticias">18/01/18<u>Nuevo servicio a domicilio ya disponible</u></a><br>
+                <br>
+                <a href="#noticias">04/01/18<u>Reserva ya tu roscón de reyes</u></a><br>
+                <br>
+                <a href="#noticias">29/12/17<u>Ofertas especiales en polvorones y mantecados</u></a>
             </div>
-        </footer>
+    </div>
+    </article>
+        </section>
+
+
+    </main>
+
+
+
+    <footer class="footer" id="footer">
+        <div id="datoscontacto">
+            <h2>Contacto</h2>
+            <h4>Información de contacto:</h4>
+            <p>Dirección: Cubillo, 4 BAJO, 24420, Fabero (LEON)</p>
+            <p>Teléfono: 987550643</p>
+            <p>Email: pepe.pan@gmail.com</p>
+        </div>
+        <div id="social">
+            <h2>Redes sociales</h2>
+            <ul>
+                <li><a href="http://facebook.com/"><i class="fa fa-facebook-square" style="font-size:48px"></i></a></li>
+                <li><a href="http://instagram.com/"><i class="fa fa-instagram" style="font-size:48px"></i></a></li>
+                <li><a href="http://twitter.com/"><i class="fa fa-twitter" style="font-size:48px"></i></a></li>
+            </ul>
+
+        </div>
+        <div id="legal">
+            <h2>Aviso legal</h2>
+            <ul>
+                <li><a href="#terminos">Términos y condiciones de uso</a></li>
+                <li><a href="#privacidad">Política de privacidad</a></li>
+                <li><a href="cookies">Política de cookies</a></li>
+            </ul>
+        </div>
+    </footer>
 
     </div>
     <!-- Optional JavaScript -->
