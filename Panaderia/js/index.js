@@ -4,55 +4,42 @@
 /*global $*/
 
 
-$("#portada").show();
-$("#quienes").hide();
-$("#servicios").hide();
-$("#productos").hide();
-$("#noticias").hide();
-$("#contacto").hide();
+(function() {
+	function toJSONString( form ) {
+		var obj = {};
+		var elements = form.querySelectorAll( "input, select, textarea" );
+		for( var i = 0; i < elements.length; ++i ) {
+			var element = elements[i];
+			var name = element.name;
+			var value = element.value;
 
+			if( name ) {
+				obj[ name ] = value;
+			}
+		}
 
-$("#quienes").click(function(){
-    $("#quienes").show();
-    $("#portada").hide();
-    $("#servicios").hide();
-    $("#productos").hide();
-    $("#noticias").hide();
-    $("#contacto").hide();
-})
+		return JSON.stringify( obj );
+	}
+
+	document.addEventListener( "DOMContentLoaded", function() {
+		var form = document.getElementById( "test" );
+		var output = document.getElementById( "output" );
+		form.addEventListener( "submit", function( e ) {
+			e.preventDefault();
+			var json = toJSONString( this );
+			output.innerHTML = json;
+
+		}, false);
+
+	});
     
-$("#servicios").click(function(){
-    $("#servicios").show();
-    $("#portada").hide();
-    $("#quienes").hide();
-    $("#productos").hide();
-    $("#noticias").hide();
-    $("#contacto").hide();
-})
-    
-$("#productos").click(function(){
-    $("#productos").show();
-    $("#portada").hide();
-    $("#servicios").hide();
-    $("#quienes").hide();
-    $("#noticias").hide();
-    $("#contacto").hide();
-})
-    
-$("#noticias").click(function(){
-    $("#noticias").show();
-    $("#portada").hide();
-    $("#servicios").hide();
-    $("#quienes").hide();
-    $("#productos").hide();
-    $("#contacto").hide();
-})
-    
-$("#contacto").click(function(){
-    $("#contacto").show();
-    $("#portada").hide();
-    $("#servicios").hide(;)
-    $("#quienes").hide();
-    $("#noticias").hide();
-    $("#productos").hide();
-})
+    $.ajax(
+    {
+        url : 'http://localhost:3000/',
+        type: "POST",
+        data : jsonData,
+
+    });
+    e.preventDefault(); 
+});
+})();

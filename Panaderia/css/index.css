@@ -1,50 +1,3 @@
-
-
-.active-pink-2 input[type=text]:focus:not([readonly]) {
-    border-bottom: 1px solid #f48fb1;
-    box-shadow: 0 1px 0 0 #f48fb1;
-}
-
-.active-pink input[type=text] {
-    border-bottom: 1px solid #f48fb1;
-    box-shadow: 0 1px 0 0 #f48fb1;
-}
-
-.active-purple-2 input[type=text]:focus:not([readonly]) {
-    border-bottom: 1px solid #ce93d8;
-    box-shadow: 0 1px 0 0 #ce93d8;
-}
-
-.active-purple input[type=text] {
-    border-bottom: 1px solid #ce93d8;
-    box-shadow: 0 1px 0 0 #ce93d8;
-}
-
-.active-cyan-2 input[type=text]:focus:not([readonly]) {
-    border-bottom: 1px solid #4dd0e1;
-    box-shadow: 0 1px 0 0 #4dd0e1;
-}
-
-.active-cyan input[type=text] {
-    border-bottom: 1px solid #4dd0e1;
-    box-shadow: 0 1px 0 0 #4dd0e1;
-}
-
-.active-cyan .fa,
-.active-cyan-2 .fa {
-    color: #4dd0e1;
-}
-
-.active-purple .fa,
-.active-purple-2 .fa {
-    color: #ce93d8;
-}
-
-.active-pink .fa,
-.active-pink-2 .fa {
-    color: #f48fb1;
-}
-
 #tablaproductos td {
     text-align: center;
     vertical-align: middle;
@@ -69,7 +22,6 @@
 
 #footer > div:last-child {
     float: right;
-    text-align: right;
     width: 33.3%;
 }
 
@@ -77,7 +29,16 @@
     width: 100%;
     margin: 10px;
     padding: 10px;
-    background-color: lightgrey;
+    background-color: #E9ECEF;
+
+}
+
+#footer h2 {
+    padding-bottom: 10px;
+}
+
+#portada h3 {
+    padding-bottom: 10px;
 }
 
 /* This hides all pages */
@@ -100,15 +61,6 @@
     display: none;
 }
 
-.center {
-    display: block;
-    margin: 10px;
-    padding: 10px;
-}
-
-#portada {
-    align-items: center;
-}
 
 #subportada {
     padding: 10px;
@@ -121,48 +73,38 @@
     margin-left: 60px;
 }
 
-imagebox {
-  background: black;
-  padding: 0px;
-  position: relative;
-  text-align: center;
-  width: 100%;
-}
 
-.imagebox img {
-  opacity: 1;
-  transition: 0.5s opacity;
-}
-
-.imagebox .imagebox-desc {
-  background-color: rgba(0, 0, 0, 0.6);
-  bottom: 0px;
-  color: white;
-  font-size: 1.2em;
-  left: 0px;
-  padding: 10px 15px;
-  position: absolute;
-  transition: 0.5s padding;
-  text-align: center;
-  width: 100%;
-}
-
-.imagebox:hover img {
-  opacity: 0.7;
-}
-
-.imagebox:hover .imagebox-desc {
-  padding-bottom: 10%;
-}
 
 #destacado {
     margin-left: 200px;
 }
 
 header {
-    position:relative;
+    position: relative;
 }
 
 #productos {
     margin: 15px;
+}
+
+#quienes {
+    margin: 10px;
+    padding: 10px;
+}
+
+#main {
+    padding: 15px;
+    margin: 15px;
+}
+
+#tablaproductos {
+    padding: 15px;
+}
+
+#cabecera-noticias h4 {
+    padding-top: 10px;
+}
+
+#noticias-completas {
+    padding-top: 15px;
 }
